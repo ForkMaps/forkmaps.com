@@ -1399,5 +1399,14 @@
     "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3761715.0",
     "repo": "https://github.com/zuccbucc-project",
     "diffTarget": 120
+  },
+  "ft-42": {
+    "coin": "FT",
+    "name": "42",
+    "algorithm": "Cryptonight Lite v1",
+    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4694014.0",
+    "repo": "https://github.com/FourtyTwo/42",
+    "forkedFrom": "trtl-turtlecoin",
+    "diffTarget": 30
   }
 }
