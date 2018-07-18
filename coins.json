@@ -1,188 +1,188 @@
 {
   "xmr-monero": {
-     "coin":"XMR",
-     "name":"Monero",
-     "algorithm":"Cryptonight v7",
-     "repo":"https://github.com/monero-project/monero",
-     "website":"https://getmonero.org"
+    "coin": "XMR",
+    "name": "Monero",
+    "algorithm": "Cryptonight v7",
+    "repo": "https://github.com/monero-project/monero",
+    "website": "https://getmonero.org"
   },
   "xao-alloy": {
-     "coin":"XAO",
-     "name":"Alloy",
-     "algorithm":"Cryptonight Heavy Alloy",
-     "repo":"https://github.com/alloyproject/alloy",
-     "website":"https://alloyproject.org",
-     "forkedFrom":"bcn-bytecoin"
+    "coin": "XAO",
+    "name": "Alloy",
+    "algorithm": "Cryptonight Heavy Alloy",
+    "repo": "https://github.com/alloyproject/alloy",
+    "website": "https://alloyproject.org",
+    "forkedFrom": "bcn-bytecoin"
   },
   "msr-masari": {
-     "coin":"MSR",
-     "name":"Masari",
-     "algorithm":"Cryptonight Fast",
-     "repo":"https://github.com/masari-project/masari",
-     "website":"https://www.getmasari.org",
-     "forkedFrom":"xmr-monero"
+    "coin": "MSR",
+    "name": "Masari",
+    "algorithm": "Cryptonight Fast",
+    "repo": "https://github.com/masari-project/masari",
+    "website": "https://www.getmasari.org",
+    "forkedFrom": "xmr-monero"
   },
   "grft-graft": {
-     "coin":"GRFT",
-     "name":"Graft",
-     "algorithm":"Cryptonight v7",
-     "repo":"https://github.com/graft-project/GraftNetwork",
-     "website":"https://www.graft.network",
-     "forkedFrom":"xmr-monero"
+    "coin": "GRFT",
+    "name": "Graft",
+    "algorithm": "Cryptonight v7",
+    "repo": "https://github.com/graft-project/GraftNetwork",
+    "website": "https://www.graft.network",
+    "forkedFrom": "xmr-monero"
   },
   "xtl-stellite": {
-     "coin":"XTL",
-     "name":"Stellite",
-     "algorithm":"Cryptonight XTL variant",
-     "repo":"https://github.com/stellitecoin/Stellite",
-     "website":"https://stellite.cash",
-     "forkedFrom":["xmr-monero", "etn-electroneum", "msr-masari"]
+    "coin": "XTL",
+    "name": "Stellite",
+    "algorithm": "Cryptonight XTL variant",
+    "repo": "https://github.com/stellitecoin/Stellite",
+    "website": "https://stellite.cash",
+    "forkedFrom": ["xmr-monero", "etn-electroneum", "msr-masari"]
   },
   "xhv-haven": {
-     "coin":"XHV",
-     "name":"Haven Protocol",
-     "algorithm":"Cryptonight Heavy",
-     "repo":"https://github.com/havenprotocol/haven",
-     "website":"https://havenprotocol.com",
-     "forkedFrom":"xmr-monero"
+    "coin": "XHV",
+    "name": "Haven Protocol",
+    "algorithm": "Cryptonight Heavy",
+    "repo": "https://github.com/havenprotocol/haven",
+    "website": "https://havenprotocol.com",
+    "forkedFrom": "xmr-monero"
   },
   "tube-bittube": {
-     "coin":"TUBE",
-     "name":"Bittube",
-     "algorithm":"Cryptonight Heavy",
-     "repo":"https://github.com/ipbc-dev/bittube",
-     "website":"https://bit.tube",
-     "forkedFrom":"xmr-monero"
+    "coin": "TUBE",
+    "name": "Bittube",
+    "algorithm": "Cryptonight Heavy",
+    "repo": "https://github.com/ipbc-dev/bittube",
+    "website": "https://bit.tube",
+    "forkedFrom": "xmr-monero"
   },
   "itns-intensecoin": {
-     "coin":"ITNS",
-     "name":"Intensecoin",
-     "algorithm":"Cryptonight v7",
-     "repo":"https://github.com/valiant1x/intensecoin",
-     "website":"https://intensecoin.com",
-     "forkedFrom":"xmr-monero"
+    "coin": "ITNS",
+    "name": "Intensecoin",
+    "algorithm": "Cryptonight v7",
+    "repo": "https://github.com/valiant1x/intensecoin",
+    "website": "https://intensecoin.com",
+    "forkedFrom": "xmr-monero"
   },
   "loki-loki": {
-     "coin":"LOKI",
-     "name":"Loki",
-     "algorithm":"Cryptonight Heavy",
-     "repo":"https://github.com/loki-project/loki",
-     "website":"https://loki.network",
-     "forkedFrom":"xmr-monero"
+    "coin": "LOKI",
+    "name": "Loki",
+    "algorithm": "Cryptonight Heavy",
+    "repo": "https://github.com/loki-project/loki",
+    "website": "https://loki.network",
+    "forkedFrom": "xmr-monero"
   },
   "aeon-aeon": {
-     "coin":"AEON",
-     "name":"Aeon",
-     "algorithm":"Cryptonight Lite v1",
-     "repo":"https://github.com/aeonix/aeon",
-     "website":"http://www.aeon.cash",
-     "forkedFrom":"xmr-monero"
+    "coin": "AEON",
+    "name": "Aeon",
+    "algorithm": "Cryptonight Lite v1",
+    "repo": "https://github.com/aeonix/aeon",
+    "website": "http://www.aeon.cash",
+    "forkedFrom": "xmr-monero"
   },
   "bsm-bitsum": {
-     "coin":"BSM",
-     "name":"Bitsum",
-     "algorithm":"Cryptonight Lite v7",
-     "repo":"https://github.com/BitsumFoundation/bitsum_core",
-     "website":"https://bitsum.money",
-     "forkedFrom":"bcn-bytecoin"
+    "coin": "BSM",
+    "name": "Bitsum",
+    "algorithm": "Cryptonight Lite v7",
+    "repo": "https://github.com/BitsumFoundation/bitsum_core",
+    "website": "https://bitsum.money",
+    "forkedFrom": "bcn-bytecoin"
   },
   "fno-fonero": {
-     "coin":"FNO",
-     "name":"Fonero",
-     "algorithm":"Cryptonight v7",
-     "repo":"https://github.com/fonero-project/fonero",
-     "website":"http://fonero.org",
-     "forkedFrom":"xmr-monero"
+    "coin": "FNO",
+    "name": "Fonero",
+    "algorithm": "Cryptonight v7",
+    "repo": "https://github.com/fonero-project/fonero",
+    "website": "http://fonero.org",
+    "forkedFrom": "xmr-monero"
   },
   "trtl-turtlecoin": {
-     "coin":"TRTL",
-     "name":"Turtlecoin",
-     "algorithm":"Cryptonight Lite v1",
-     "repo":"https://github.com/turtlecoin/turtlecoin",
-     "website":"https://turtlecoin.lol",
-     "forkedFrom":["xmr-monero", "bcn-bytecoin"]
+    "coin": "TRTL",
+    "name": "Turtlecoin",
+    "algorithm": "Cryptonight Lite v1",
+    "repo": "https://github.com/turtlecoin/turtlecoin",
+    "website": "https://turtlecoin.lol",
+    "forkedFrom": ["xmr-monero", "bcn-bytecoin"]
   },
   "xun-ultranote": {
-     "coin":"XUN",
-     "name":"Ultranote",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/xun-project/UltraNote",
-     "website":"https://ultranote.org"
+    "coin": "XUN",
+    "name": "Ultranote",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/xun-project/UltraNote",
+    "website": "https://ultranote.org"
   },
   "crep-crepcoin": {
-     "coin":"CREP",
-     "name":"Crepcoin",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/crepcoin/crepcoin",
-     "website":"https://www.crepcoin.org",
-     "forkedFrom":"krb-karbo"
+    "coin": "CREP",
+    "name": "Crepcoin",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/crepcoin/crepcoin",
+    "website": "https://www.crepcoin.org",
+    "forkedFrom": "krb-karbo"
   },
   "bkc-balkancoin": {
-     "coin":"BKC",
-     "name":"Balkancoin",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/zlatkomajstor/balkancoin",
-     "website":"https://www.balkancoin.org",
-     "forkedFrom":"krb-karbo"
+    "coin": "BKC",
+    "name": "Balkancoin",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/zlatkomajstor/balkancoin",
+    "website": "https://www.balkancoin.org",
+    "forkedFrom": "krb-karbo"
   },
   "coal-bitcoal": {
-     "coin":"COAL",
-     "name":"Bitcoal",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/bitcoal/bitcoal",
-     "website":"http://getbitcoal.org"
+    "coin": "COAL",
+    "name": "Bitcoal",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/bitcoal/bitcoal",
+    "website": "http://getbitcoal.org"
   },
   "etn-electroneum": {
-     "coin":"ETN",
-     "name":"Electroneum",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/electroneum/electroneum",
-     "website":"https://electroneum.com",
-     "forkedFrom":"xmr-monero"
+    "coin": "ETN",
+    "name": "Electroneum",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/electroneum/electroneum",
+    "website": "https://electroneum.com",
+    "forkedFrom": "xmr-monero"
   },
   "bcn-bytecoin": {
-     "coin":"BCN",
-     "name":"Bytecoin",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/bcndev/bytecoin",
-     "website":"https://bytecoin.org"
+    "coin": "BCN",
+    "name": "Bytecoin",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/bcndev/bytecoin",
+    "website": "https://bytecoin.org"
   },
   "sumo-sumocoin": {
-     "coin":"SUMO",
-     "name":"Sumocoin",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/sumoprojects/sumokoin",
-     "website":"https://www.sumokoin.org",
-     "forkedFrom":"xmr-monero"
+    "coin": "SUMO",
+    "name": "Sumocoin",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/sumoprojects/sumokoin",
+    "website": "https://www.sumokoin.org",
+    "forkedFrom": "xmr-monero"
   },
   "krb-karbo": {
-     "coin":"KRB",
-     "name":"Karbo",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/seredat/karbowanec",
-     "website":"http://karbowanec.com"
+    "coin": "KRB",
+    "name": "Karbo",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/seredat/karbowanec",
+    "website": "http://karbowanec.com"
   },
   "dcy-dinastycoin": {
-     "coin":"DCY",
-     "name":"Dinastycoin",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/dinastyoffreedom/dinastycoin",
-     "website":"http://www.dinastycoin.com",
-     "forkedFrom":"bcn-bytecoin"
+    "coin": "DCY",
+    "name": "Dinastycoin",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/dinastyoffreedom/dinastycoin",
+    "website": "http://www.dinastycoin.com",
+    "forkedFrom": "bcn-bytecoin"
   },
   "xlc-leviarcoin": {
-     "coin":"XLC",
-     "name":"Leviarcoin",
-     "algorithm":"Cryptonight ",
-     "repo":"https://github.com/leviarcoin/leviarcoin-src",
-     "website":"https://leviarcoin.org",
-     "forkedFrom":"xmr-monero"
+    "coin": "XLC",
+    "name": "Leviarcoin",
+    "algorithm": "Cryptonight ",
+    "repo": "https://github.com/leviarcoin/leviarcoin-src",
+    "website": "https://leviarcoin.org",
+    "forkedFrom": "xmr-monero"
   },
   "dero-dero": {
-     "coin":"DERO",
-     "name":"Dero",
-     "algorithm":"Cryptonight",
-     "repo":"https://github.com/deroproject/derosuite",
-     "website":"https://dero.io"
+    "coin": "DERO",
+    "name": "Dero",
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/deroproject/derosuite",
+    "website": "https://dero.io"
   }
 }
