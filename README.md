@@ -6,8 +6,7 @@ This project's goal is to maintain an accurate and current cryptonote fork chart
 
 ## Contributing
 All of the coin data is maintained by community contributors.
-
-### Coin Data
+#### Coin Data
 Add or update coin data by modifying the coins.json file.  For convenience, [https://github.com/jerme404/forknote-tree/tree/coin-contrib](here's a branch) with only that file.
 
 Please run your changes through a JSON validator before submitting a PR.
