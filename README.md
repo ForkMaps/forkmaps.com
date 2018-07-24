@@ -1,4 +1,4 @@
-# forknote-tree
+# cryptonote-tree
 
 > Cryptonote fork tree
 
