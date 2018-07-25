@@ -2,1411 +2,2196 @@
   "xmr-monero": {
     "coin": "XMR",
     "name": "Monero",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=583449.0",
     "repo": "https://github.com/monero-project/monero",
+    "diffTarget": 120,
     "website": "https://getmonero.org",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=583449",
+      "explorer": "http://moneroblocks.info/",
+      "twitter": "https://twitter.com/monerocurrency",
+      "reddit": "http://www.reddit.com/r/monero",
+      "facebook": "https://www.facebook.com/monerocurrency",
+      "whitepaper": "https://cryptonote.org/whitepaper.pdf",
+      "gplus": "https://plus.google.com/101861896996947433029/posts"
+    },
+    "pools": [
+      "https://supportxmr.com/",
+      "https://xmrpool.net/",
+      "https://xmr.nanopool.org/",
+      "https://monero.hashvault.pro/"
+    ]
   },
   "xao-alloy": {
     "coin": "XAO",
     "name": "Alloy",
+    "activelyMined": true,
     "algorithm": "Cryptonight alloy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3002653.0",
     "repo": "https://github.com/alloyproject/alloy",
     "website": "https://alloyproject.org",
+    "diffTarget": 180,
     "forkedFrom": "bcn-bytecoin",
-    "diffTarget": 180
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3002653"
+    },
+    "pools": []
   },
   "msr-masari": {
     "coin": "MSR",
     "name": "Masari",
+    "activelyMined": true,
     "algorithm": "Cryptonight Fast",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2159114.0",
     "repo": "https://github.com/masari-project/masari",
     "website": "https://www.getmasari.org",
+    "diffTarget": 120,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2159114"
+    },
+    "pools": []
   },
   "grft-graft": {
     "coin": "GRFT",
     "name": "Graft",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2115188",
     "repo": "https://github.com/graft-project/GraftNetwork",
     "website": "https://www.graft.network",
+    "diffTarget": 120,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2115188"
+    },
+    "pools": []
   },
   "xtl-stellite": {
     "coin": "XTL",
     "name": "Stellite",
+    "activelyMined": true,
     "algorithm": "Cryptonight Stellite",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2813261.0",
     "repo": "https://github.com/stellitecoin/Stellite",
     "website": "https://stellite.cash",
-    "forkedFrom": ["xmr-monero", "etn-electroneum", "msr-masari"],
-    "diffTarget": 60
+    "diffTarget": 60,
+    "forkedFrom": [
+      "xmr-monero",
+      "etn-electroneum",
+      "msr-masari"
+    ],
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2813261"
+    },
+    "pools": []
   },
   "xhv-haven": {
     "coin": "XHV",
     "name": "Haven Protocol",
+    "activelyMined": true,
     "algorithm": "Cryptonight Haven",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2989487.0",
     "repo": "https://github.com/havenprotocol/haven",
     "website": "https://havenprotocol.com",
+    "diffTarget": 120,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2989487"
+    },
+    "pools": []
   },
   "tube-bittube": {
     "coin": "TUBE",
     "name": "Bittube",
+    "activelyMined": true,
     "algorithm": "Cryptonight Saber",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2856278.0",
     "repo": "https://github.com/ipbc-dev/ipbc",
     "website": "https://bit.tube",
+    "diffTarget": 120,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2856278"
+    },
+    "pools": []
   },
   "itns-intensecoin": {
     "coin": "ITNS",
     "name": "Intensecoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2090765.0",
     "repo": "https://github.com/valiant1x/intensecoin",
     "website": "https://intensecoin.com",
+    "diffTarget": 120,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2090765"
+    },
+    "pools": []
   },
   "loki-loki": {
     "coin": "LOKI",
     "name": "Loki",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3016125.0",
     "repo": "https://github.com/loki-project/loki",
     "website": "https://loki.network",
+    "diffTarget": 120,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3016125"
+    },
+    "pools": []
   },
   "aeon-aeon": {
     "coin": "AEON",
     "name": "AEON",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=641696.0",
     "repo": "https://github.com/aeonix/aeon",
     "website": "http://www.aeon.cash",
+    "diffTarget": 240,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=641696"
+    },
+    "pools": []
   },
   "bsm-bitsum": {
     "coin": "BSM",
     "name": "Bitsum",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2459792.0",
     "repo": "https://github.com/BitsumFoundation/bitsum_core",
     "website": "https://bitsum.money",
+    "diffTarget": 120,
     "forkedFrom": "bcn-bytecoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2459792"
+    },
+    "pools": []
   },
   "fno-fonero": {
     "coin": "FNO",
     "name": "Fonero",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3116102",
     "repo": "https://github.com/fonero-project/fonero",
     "website": "http://fonero.org",
+    "diffTarget": 120,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3116102"
+    },
+    "pools": []
   },
   "trtl-turtlecoin": {
     "coin": "TRTL",
     "name": "Turtlecoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2872287.0",
     "repo": "https://github.com/turtlecoin/turtlecoin",
     "website": "https://turtlecoin.lol",
-    "forkedFrom": ["xmr-monero", "bcn-bytecoin"],
-    "diffTarget": 30
+    "diffTarget": 30,
+    "forkedFrom": [
+      "xmr-monero",
+      "bcn-bytecoin"
+    ],
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2872287"
+    },
+    "pools": []
   },
   "xun-ultranote": {
     "coin": "XUN",
     "name": "Ultranote",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2357930.0",
     "repo": "https://github.com/xun-project/UltraNote",
+    "diffTarget": 240,
     "website": "https://ultranote.org",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2357930"
+    },
+    "pools": []
   },
   "crep-crepcoin": {
     "coin": "CREP",
     "name": "Crepcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2638878.0",
     "repo": "https://github.com/crepcoin/crepcoin",
     "website": "https://www.crepcoin.org",
+    "diffTarget": 240,
     "forkedFrom": "krb-karbo",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2638878"
+    },
+    "pools": []
   },
   "bkc-balkancoin": {
     "coin": "BKC",
     "name": "Balkancoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2821734.0",
     "repo": "https://github.com/zlatkomajstor/balkancoin",
     "website": "https://www.balkancoin.org",
+    "diffTarget": 30,
     "forkedFrom": "krb-karbo",
-    "diffTarget": 30
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2821734"
+    },
+    "pools": []
   },
   "coal-bitcoal": {
     "coin": "COAL",
     "name": "Bitcoal",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1635047.0",
     "repo": "https://github.com/bitcoal/bitcoal",
+    "diffTarget": 90,
     "website": "http://getbitcoal.org",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1635047",
+      "telegram": "https://t.me/joinchat/ErNaG0sxjn7FJyVCcEE1VA",
+      "reddit": "https://www.reddit.com/r/cryptocoal"
+    },
+    "pools": [
+      "http://devmining.bitcoal.io/"
+    ]
   },
   "etn-electroneum": {
     "coin": "ETN",
     "name": "Electroneum",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2065043.0",
     "repo": "https://github.com/electroneum/electroneum",
     "website": "https://electroneum.com",
+    "diffTarget": 60,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2065043"
+    },
+    "pools": []
   },
   "bcn-bytecoin": {
     "coin": "BCN",
     "name": "Bytecoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=512747.0",
     "repo": "https://github.com/bcndev/bytecoin",
+    "diffTarget": 120,
     "website": "https://bytecoin.org",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=512747",
+      "explorer": "https://minergate.com/#/blockchain/bcn/block",
+      "twitter": "https://twitter.com/Bytecoin_BCN",
+      "reddit": "http://www.reddit.com/r/BytecoinBCN/",
+      "roadmap": "https://bytecoin.org/roadmap/"
+    },
+    "pools": [
+      "http://bcn.democats.org/",
+      "http://cryptonight.net/",
+      "http://cryptmonero.com/bytecoin/"
+    ]
   },
   "sumo-sumocoin": {
     "coin": "SUMO",
     "name": "Sumocoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1905086.0",
     "repo": "https://github.com/sumoprojects/sumokoin",
     "website": "https://www.sumokoin.org",
+    "diffTarget": 240,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1905086"
+    },
+    "pools": []
   },
   "krb-karbo": {
     "coin": "KRB",
     "name": "Karbo",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1491747",
     "repo": "https://github.com/seredat/karbowanec",
+    "diffTarget": 240,
     "website": "http://karbowanec.com",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1491747"
+    },
+    "pools": []
   },
   "dcy-dinasty": {
     "coin": "DCY",
     "name": "Dinasty",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3069548.0",
     "repo": "https://github.com/dinastyoffreedom/dinastycoin",
     "website": "http://www.dinastycoin.com",
+    "diffTarget": 120,
     "forkedFrom": "bcn-bytecoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3069548",
+      "explorer": "http://www.dinastycoin.com/en/blockchain-explorer/",
+      "discord": "https://discord.gg/T4vQQ8T/",
+      "telegram": "https://t.me/joinchat/Es0dxRJImRjyWlAiCPtKHg",
+      "telegram-news": "https://t.me/joinchat/AAAAAEkoLU7qlYnyfkYa9g",
+      "telegram-support": "https://t.me/joinchat/Es0dxQsliOiqAerw1b3ukQ",
+      "twitter": "https://twitter.com/DinastycoinI/",
+      "reddit": "http://www.reddit.com/r/monero",
+      "facebook": "https://www.facebook.com/Dinasty.International/",
+      "roadmap": "https://drive.google.com/open?id=1KjVw7Guu8H3VVQU4PgvopruM88_zFWl8"
+    },
+    "pools": [
+      "http://poolmining1.dinastycoin.com/",
+      "http://poolmining2.dinastycoin.com/",
+      "http://dcy.crypto-coins.club/",
+      "http://dcy.cryptomineros.com/"
+    ]
   },
   "xlc-leviar": {
     "coin": "XLC",
     "name": "Leviarcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1847322.0",
     "repo": "https://github.com/leviarcoin/leviarcoin-src",
+    "diffTarget": 60,
     "forkedFrom": "xmr-monero",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1847322"
+    },
+    "pools": []
   },
   "dero-dero": {
     "coin": "DERO",
     "name": "Dero",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2525508.0",
+    "diffTarget": 120,
     "repo": "https://github.com/deroproject/derosuite",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2525508"
+    },
+    "pools": []
   },
   "arq-arqma": {
     "coin": "ARQ",
     "name": "ArQmA",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4474605",
+    "diffTarget": 240,
     "repo": "https://github.com/arqma",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4474605"
+    },
+    "pools": []
   },
   "rto-arto": {
     "coin": "RTO",
     "name": "Arto",
+    "activelyMined": true,
     "algorithm": "Cryptonight arto",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2932583.0",
+    "diffTarget": 90,
     "repo": "https://github.com/artocash/arto",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2932583"
+    },
+    "pools": []
   },
   "athx-athena": {
     "coin": "ATHX",
     "name": "Athena",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": null,
+    "diffTarget": 3600,
     "repo": "https://github.com/athena-network/athena",
-    "diffTarget": 3600
+    "links": {},
+    "pools": []
   },
   "b2b-b2bcoin": {
     "coin": "B2B",
     "name": "B2BCoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2098163.0",
+    "diffTarget": 120,
     "repo": "https://github.com/oliviersinnaeve/b2bcoin-wallet",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2098163"
+    },
+    "pools": []
   },
   "bbs-bbs": {
     "coin": "BBS",
     "name": "BBS",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2861067.0",
+    "diffTarget": 120,
     "repo": "https://github.com/bbscoin/bbscoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2861067"
+    },
+    "pools": []
   },
   "frank-befrank": {
     "coin": "FRANK",
     "name": "BeFrank",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3442318",
+    "diffTarget": 120,
     "repo": "https://github.com/befrank-project",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3442318"
+    },
+    "pools": []
   },
   "btn-bitcoin": {
     "coin": "BTN",
     "name": "Bitcoin Nova",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2309303.0",
+    "diffTarget": 120,
     "repo": "https://github.com/Bitcoin-N/bitcoinnova/",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2309303"
+    },
+    "pools": []
   },
   "b2n-bitcoin2network": {
     "coin": "B2N",
     "name": "bitcoin2network",
+    "activelyMined": true,
     "algorithm": "Cryptonight b2n",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4311333.0",
+    "diffTarget": 90,
     "repo": "https://github.com/b2n-project/bitcoin2network",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4311333"
+    },
+    "pools": []
   },
   "btcn-bitcoinnero": {
     "coin": "BTCN",
     "name": "BitcoinNero",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4693135.0",
+    "diffTarget": 10,
     "repo": "https://github.com/bitcoinnero",
-    "diffTarget": 10
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4693135"
+    },
+    "pools": []
   },
   "btcn-bitcoinote": {
     "coin": "BTCN",
     "name": "BitcoiNote",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2660296.0",
+    "diffTarget": 120,
     "repo": "https://github.com/Bitcoinote/Bitcoinote-Core",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2660296"
+    },
+    "pools": []
   },
   "ltl-bitlitas": {
     "coin": "LTL",
     "name": "BitLitas",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3262692.0",
+    "diffTarget": 60,
     "repo": "https://github.com/Bitlitas/bitlitas",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3262692"
+    },
+    "pools": []
   },
   "bxb-bixbite": {
     "coin": "BXB",
     "name": "Bixbite",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3443277.0",
+    "diffTarget": 100,
     "repo": "https://github.com/BixBite-project/bixbite",
-    "diffTarget": 100
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3443277"
+    },
+    "pools": []
   },
   "bloc-bloc": {
     "coin": "BLOC",
     "name": "BLOC",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4108831.0",
+    "diffTarget": 120,
     "repo": "https://github.com/furiousteam/BLOC",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4108831"
+    },
+    "pools": []
   },
   "bbrc-blood": {
     "coin": "BBRC",
     "name": "Blood Donation Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2986524.0",
+    "diffTarget": 120,
     "repo": "https://github.com/MatheusGrijo/BloodDonationCoinCore",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2986524"
+    },
+    "pools": []
   },
   "bbrc-blood-heavy": {
     "coin": "BBRC",
     "name": "Blood Donation Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4627133.0",
+    "diffTarget": 240,
     "repo": "https://github.com/blooddonationcoin/",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4627133"
+    },
+    "pools": []
   },
   "bbc-blueberries": {
     "coin": "BBC",
     "name": "BlueBerries",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3039509.0",
+    "diffTarget": 90,
     "repo": "https://github.com/BomberUA/BlueBerries",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3039509"
+    },
+    "pools": []
   },
   "bold-bold": {
     "coin": "BOLD",
     "name": "Bold",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4587224.0",
+    "diffTarget": 180,
     "repo": null,
-    "diffTarget": 180
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4587224"
+    },
+    "pools": []
   },
   "bbr-boolberry": {
     "coin": "BBR",
     "name": "Boolberry",
+    "activelyMined": true,
     "algorithm": "wild_keccak",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=577267.0",
+    "diffTarget": 120,
     "repo": null,
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=577267"
+    },
+    "pools": []
   },
   "bzk-brazukcoin": {
     "coin": "BZK",
     "name": "Brazukcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2684213.0",
+    "diffTarget": 240,
     "repo": "https://github.com/brazukcoin/brazukcoin",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2684213"
+    },
+    "pools": []
   },
   "buz-bukz": {
     "coin": "BUZ",
     "name": "Bukz",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4557266.0",
+    "diffTarget": 42,
     "repo": "https://github.com/bukzmatter/bukz/",
-    "diffTarget": 42
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4557266"
+    },
+    "pools": []
   },
   "dex-cadex": {
     "coin": "DEX",
     "name": "Cadex",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3271441",
+    "diffTarget": 120,
     "repo": "https://github.com/cadexdev/cadex",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3271441"
+    },
+    "pools": []
   },
   "xat-catalyst": {
     "coin": "XAT",
     "name": "Catalyst",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4485387.new",
+    "diffTarget": 120,
     "repo": "https://github.com/CatalystCash/Catalyst-Cash/releases",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4485387"
+    },
+    "pools": []
   },
   "ctl-citadel": {
     "coin": "CTL",
     "name": "Citadel",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4388936",
+    "diffTarget": 240,
     "repo": "https://github.com/cntemple/Citadel",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4388936"
+    },
+    "pools": []
   },
   "cbc-cobit": {
     "coin": "CBC",
     "name": "Cobit Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4547873.msg40952254#msg40952254",
+    "diffTarget": 120,
     "repo": "https://github.com/CobitCoin/cobitcoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4547873"
+    },
+    "pools": []
   },
   "ccx-conceal": {
     "coin": "CCX",
     "name": "Conceal",
+    "activelyMined": true,
     "algorithm": "Cryptonight Fast",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4515873.0",
+    "diffTarget": 120,
     "repo": null,
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4515873"
+    },
+    "pools": []
   },
   "croat-croat": {
     "coin": "CROAT",
     "name": "CROAT",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2102443.0",
+    "diffTarget": 120,
     "repo": "https://github.com/croatproject/Croat",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2102443"
+    },
+    "pools": []
   },
   "cml-cryptomillenium": {
     "coin": "CML",
     "name": "CryptoMillenium",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3094542.0",
+    "diffTarget": 60,
     "repo": "https://sourceforge.net/projects/cryptomillenium",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3094542"
+    },
+    "pools": []
   },
   "deut-deuter": {
     "coin": "DEUT",
     "name": "Deuter",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2776245.0",
+    "diffTarget": 120,
     "repo": "https://github.com/servc4/DeuterCoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2776245"
+    },
+    "pools": []
   },
   "xdn-digitalnote": {
     "coin": "XDN",
     "name": "DigitalNote",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4451957",
+    "diffTarget": 240,
     "repo": "https://github.com/digitalnotexdn",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4451957"
+    },
+    "pools": []
   },
   "dpr-doppler": {
     "coin": "DPR",
     "name": "Doppler",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4553663.0",
+    "diffTarget": 60,
     "repo": "https://github.com/dopplerX",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4553663"
+    },
+    "pools": []
   },
   "dosh-dosh": {
     "coin": "DOSH",
     "name": "Dosh",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2958573.0",
+    "diffTarget": 120,
     "repo": "https://github.com/dosh-project/dosh",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2958573"
+    },
+    "pools": []
   },
   "drgl-dragonglass": {
     "coin": "DRGL",
     "name": "Dragonglass",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2712001.0",
+    "diffTarget": 81,
     "repo": "https://github.com/ZirtysPerzys/DRGL",
-    "diffTarget": 81
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2712001"
+    },
+    "pools": []
   },
   "dnk-drinkcoin": {
     "coin": "DNK",
     "name": "Drinkcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "",
+    "diffTarget": 120,
     "repo": null,
-    "diffTarget": 120
+    "links": {},
+    "pools": []
   },
   "edl-edollar": {
     "coin": "EDL",
     "name": "EDollar",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2643196.0",
+    "diffTarget": 120,
     "repo": "https://github.com/edollar-project/edollar",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2643196"
+    },
+    "pools": []
   },
   "egm-egame": {
     "coin": "EGM",
     "name": "eGame Cash",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4458111.0",
+    "diffTarget": 240,
     "repo": null,
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4458111"
+    },
+    "pools": []
   },
   "megn-egano": {
     "coin": "MEGN",
     "name": "egano",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2705359.0",
+    "diffTarget": 120,
     "repo": null,
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2705359"
+    },
+    "pools": []
   },
   "xeld-eldorado": {
     "coin": "XELD",
     "name": "Eldorado",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3334828.0",
+    "diffTarget": 120,
     "repo": "https://github.com/eldoradocash/eldorado-node",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3334828"
+    },
+    "pools": []
   },
   "etnx-electronero": {
     "coin": "ETNX",
     "name": "Electronero",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3373837.0",
     "repo": "https://github.com/electronero/electronero",
+    "diffTarget": 60,
     "forkedFrom": "etn-electroneum",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3373837"
+    },
+    "pools": []
   },
   "etnc-electroneum": {
     "coin": "ETNC",
     "name": "Electroneum-Classic",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4602598.0",
+    "diffTarget": 60,
     "repo": "https://github.com/electroneumclassic/electroneum-classic",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4602598"
+    },
+    "pools": []
   },
   "elya-elya": {
     "coin": "ELYA",
     "name": "ELYA",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3118732.0",
+    "diffTarget": 60,
     "repo": "https://github.com/elyacoin/elyacoin",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3118732"
+    },
+    "pools": []
   },
   "exn-ex": {
     "coin": "EXN",
     "name": "Ex Nihilo Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4410584",
+    "diffTarget": 120,
     "repo": "https://github.com/Ex-Nihilo-Concept/Principium/",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4410584"
+    },
+    "pools": []
   },
   "xfr-ferro": {
     "coin": "XFR",
     "name": "Ferro",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3203967.0",
+    "diffTarget": 60,
     "repo": "https://github.com/Ferro-Crypto/Ferro-project/",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3203967"
+    },
+    "pools": []
   },
   "fest-festival": {
     "coin": "FEST",
     "name": "Festival",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3683049.0",
+    "diffTarget": 60,
     "repo": "https://github.com/FESTIVALCOINDEV/festival",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3683049"
+    },
+    "pools": []
   },
   "fml-fimfl": {
     "coin": "FML",
     "name": "FIMFL",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4621611",
+    "diffTarget": 60,
     "repo": "https://github.com/FIMFL/FIMFL",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4621611"
+    },
+    "pools": []
   },
   "fcb-firstcryptobank": {
     "coin": "FCB",
     "name": "Firstcryptobank",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2767600.0",
+    "diffTarget": 120,
     "repo": null,
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2767600"
+    },
+    "pools": []
   },
   "xsf-flake": {
     "coin": "XSF",
     "name": "Flake Chain",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4453691.0",
+    "diffTarget": 120,
     "repo": "https://github.com/0xA01/snowflake",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4453691"
+    },
+    "pools": []
   },
   "flurbo-flurbo": {
     "coin": "Flurbo",
     "name": "Flurbo",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3119326",
+    "diffTarget": 120,
     "repo": "https://github.com/iMrPoopybutthole/flurbo",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3119326"
+    },
+    "pools": []
   },
   "fbf-freelabit": {
     "coin": "FBF",
     "name": "Freelabit",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2344886",
+    "diffTarget": 120,
     "repo": "https://github.com/freelacoin/freelabit",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2344886"
+    },
+    "pools": []
   },
   "gad-gadcoin": {
     "coin": "GAD",
     "name": "Gadcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3339476.0",
+    "diffTarget": 90,
     "repo": "https://github.com/douglashipocreme/gadcoin-node",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3339476"
+    },
+    "pools": []
   },
   "gmt-gallion": {
     "coin": "GMT",
     "name": "Gallion",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3054182.0",
+    "diffTarget": 240,
     "repo": "https://github.com/Gallion-crypto/Gallion",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3054182"
+    },
+    "pools": []
   },
   "gac-gallus": {
     "coin": "GAC",
     "name": "Gallus",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4315296.0",
+    "diffTarget": 240,
     "repo": "https://github.com/projekgallus/galluscoin",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4315296"
+    },
+    "pools": []
   },
   "geem-geem": {
     "coin": "GEEM",
     "name": "GEEM",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2659368.0",
+    "diffTarget": 120,
     "repo": "https://github.com/geemcoin/",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2659368"
+    },
+    "pools": []
   },
   "gdm-geldum": {
     "coin": "GDM",
     "name": "Geldum",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4413923.0",
+    "diffTarget": 60,
     "repo": "https://github.com/GeldumProject/geldum",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4413923"
+    },
+    "pools": []
   },
   "goro-goro": {
     "coin": "GORO",
     "name": "Goro",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4649686.0",
+    "diffTarget": 120,
     "repo": "https://github.com/goro-project/goro",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4649686"
+    },
+    "pools": []
   },
   "hlc-halykcoin": {
     "coin": "HLC",
     "name": "Halykcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3076077.0",
+    "diffTarget": 60,
     "repo": null,
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3076077"
+    },
+    "pools": []
   },
   "hcn-humanitary": {
     "coin": "HCN",
     "name": "Humanitary Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2613592.0",
+    "diffTarget": 90,
     "repo": "https://github.com/humanitarycoin/hcn",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2613592"
+    },
+    "pools": []
   },
   "hype-hypecoin": {
     "coin": "HYPE",
     "name": "HypeCoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": null,
+    "diffTarget": 30,
     "repo": "https://github.com/HazeDevelopment/HypeCoin",
-    "diffTarget": 30
+    "links": {
+      "bitcointalkAnn": null
+    },
+    "pools": []
   },
   "inc-incognito": {
     "coin": "INC",
     "name": "Incognito",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3276900.0",
+    "diffTarget": 120,
     "repo": "https://github.com/incognito-currency/incognito",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3276900"
+    },
+    "pools": []
   },
   "intu-intucoin": {
     "coin": "INTU",
     "name": "Intucoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3394028.0",
+    "diffTarget": 120,
     "repo": "https://github.com/intucoin/INTUcoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3394028"
+    },
+    "pools": []
   },
   "ird-iridium": {
     "coin": "IRD",
     "name": "Iridium",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2150442.0",
+    "diffTarget": 175,
     "repo": "https://github.com/iridiumdev/iridium",
-    "diffTarget": 175
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2150442"
+    },
+    "pools": []
   },
   "ita-italocoin": {
     "coin": "ITA",
     "name": "Italocoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3122277.0",
+    "diffTarget": 180,
     "repo": "https://github.com/italocoin-project/italocoin",
-    "diffTarget": 180
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3122277"
+    },
+    "pools": []
   },
   "jim-jim": {
     "coin": "JIM",
     "name": "Jim",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2788264.0",
+    "diffTarget": 120,
     "repo": "https://github.com/Rob-Otman/JimCoinCLI",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2788264"
+    },
+    "pools": []
   },
   "jor-jormo": {
     "coin": "JOR",
     "name": "Jormo",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4490902.0",
+    "diffTarget": 45,
     "repo": "https://github.com/JormoCoin/JormoCoinV2",
-    "diffTarget": 45
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4490902"
+    },
+    "pools": []
   },
   "khk-kashkoin": {
     "coin": "KHK",
     "name": "Kashkoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4410872",
+    "diffTarget": 240,
     "repo": "https://github.com/kashkoin-foundation/kashkoin",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4410872"
+    },
+    "pools": []
   },
   "kepl-kepl": {
     "coin": "KEPL",
     "name": "Kepl",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3282087.0",
+    "diffTarget": 120,
     "repo": "https://github.com/kepldev/kepl",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3282087"
+    },
+    "pools": []
   },
   "know-knownero": {
     "coin": "KNOW",
     "name": "Knownero",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4385897",
+    "diffTarget": 60,
     "repo": "https://github.com/knownero/knownero",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4385897"
+    },
+    "pools": []
   },
   "ksn-koson": {
     "coin": "KSN",
     "name": "Koson",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4667297.0",
+    "diffTarget": 120,
     "repo": "https://github.com/kosonproject/koson/",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4667297"
+    },
+    "pools": []
   },
   "kmc-kripto": {
     "coin": "KMC",
     "name": "Kripto Marka Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2335467.0",
-    "repo": "https://github.com/tr4nscr1pt/kmcoin-2.0",
-    "diffTarget": 90
+    "diffTarget": 90,
+    "repo": "https://github.com/tr4nscr1pt/kmcoin-2",
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2335467"
+    },
+    "pools": []
   },
   "kgh-kwagsh": {
     "coin": "KGH",
     "name": "Kwagsh",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3194150.0",
+    "diffTarget": 120,
     "repo": "https://github.com/kwash-dev/kwagsh",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3194150"
+    },
+    "pools": []
   },
   "lch-latincash": {
     "coin": "LCH",
     "name": "Latincash",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4389341.0",
+    "diffTarget": 120,
     "repo": "https://github.com/LatinCash/latincash",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4389341"
+    },
+    "pools": []
   },
   "lns-lines": {
     "coin": "LNS",
     "name": "Lines",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3162385.0",
+    "diffTarget": 120,
     "repo": "https://github.com/linescoin/lines",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3162385"
+    },
+    "pools": []
   },
   "lbit-lithiumbit": {
     "coin": "LBIT",
     "name": "LithiumBit",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3318012",
+    "diffTarget": 180,
     "repo": "http://www.github.com/LithiumBit",
-    "diffTarget": 180
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3318012"
+    },
+    "pools": []
   },
   "lcn-loncoin": {
     "coin": "LCN",
     "name": "Loncoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2986921.0",
+    "diffTarget": 140,
     "repo": "https://github.com/Lennaft/Loncoin",
-    "diffTarget": 140
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2986921"
+    },
+    "pools": []
   },
   "lotto-lotto": {
     "coin": "LOTTO",
     "name": "Lotto",
+    "activelyMined": true,
     "algorithm": "Cryptonight Fast",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4518300.0",
+    "diffTarget": 120,
     "repo": "https://github.com/getlotto/lotto/releases",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4518300"
+    },
+    "pools": []
   },
   "luk-luka": {
     "coin": "LUK",
     "name": "LuKa",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2595241.0",
+    "diffTarget": 90,
     "repo": "https://github.com/cryptoluka/cryptoluka",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2595241"
+    },
+    "pools": []
   },
   "m0rk-m0rkcoin": {
     "coin": "M0RK",
     "name": "M0rkcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2986871.0",
+    "diffTarget": 120,
     "repo": "https://github.com/m0rkcoin/m0rkcoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2986871"
+    },
+    "pools": []
   },
   "macs-macscoin": {
     "coin": "MACS",
     "name": "MacsCoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4245620",
+    "diffTarget": 60,
     "repo": null,
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4245620"
+    },
+    "pools": []
   },
   "mtc-manateecoin": {
     "coin": "MTC",
     "name": "ManateeCoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2232302.0",
+    "diffTarget": 60,
     "repo": "http://git.mananet.net/manatails/manateecoin",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2232302"
+    },
+    "pools": []
   },
   "map-maplecoin": {
     "coin": "MAP",
     "name": "MapleCoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3197995.0",
+    "diffTarget": 60,
     "repo": "https://github.com/Maple-Coin/MapleCoin",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3197995"
+    },
+    "pools": []
   },
   "mkt-marketcash": {
     "coin": "MKT",
     "name": "Marketcash",
+    "activelyMined": true,
     "algorithm": "Cryptonight marketcash",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3019420",
+    "diffTarget": 90,
     "repo": "https://github.com/MarketCashME/marketcash",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3019420"
+    },
+    "pools": []
   },
   "xmc-monero": {
     "coin": "XMC",
     "name": "Monero Classic",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=583449.0",
+    "diffTarget": 120,
     "repo": null,
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=583449"
+    },
+    "pools": []
   },
   "xmv-monerov": {
     "coin": "XMV",
     "name": "MoneroV",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2947912",
+    "diffTarget": 120,
     "repo": "https://github.com/monerov",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2947912"
+    },
+    "pools": []
   },
   "mtip-monkeytips": {
     "coin": "MTIP",
     "name": "Monkeytips",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4595900.0",
+    "diffTarget": 45,
     "repo": "https://github.com/monkeytips/monkeytips",
-    "diffTarget": 45
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4595900"
+    },
+    "pools": []
   },
   "xmx-mutex": {
     "coin": "XMX",
     "name": "Mutex",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": null,
+    "diffTarget": 60,
     "repo": "https://github.com/MutexProject/mutex",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": null
+    },
+    "pools": []
   },
   "xsm-mynt": {
     "coin": "XSM",
     "name": "Mynt",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3310511.0",
+    "diffTarget": 120,
     "repo": "https://github.com/mynt-project/mynt",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3310511"
+    },
+    "pools": []
   },
   "mzt-myztic": {
     "coin": "MZT",
     "name": "Myztic",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4445339",
+    "diffTarget": 120,
     "repo": "https://github.com/myztic-project/myztic",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4445339"
+    },
+    "pools": []
   },
   "naza-nazacoin": {
     "coin": "NAZA",
     "name": "Nazacoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4582673.0",
+    "diffTarget": 60,
     "repo": "https://github.com/AndersonIAm/",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4582673"
+    },
+    "pools": []
   },
   "ncp-newton": {
     "coin": "NCP",
     "name": "Newton Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3072672.0",
+    "diffTarget": 120,
     "repo": "https://github.com/livenet123/Newton",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3072672"
+    },
+    "pools": []
   },
   "nnc-nicnac": {
     "coin": "NNC",
     "name": "Nicnac",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2664158.0",
+    "diffTarget": 60,
     "repo": "https://github.com/nicnaccoin/NicNacCoin",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2664158"
+    },
+    "pools": []
   },
   "nbr-niobiocash": {
     "coin": "NBR",
     "name": "Niobiocash",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2912866.0",
+    "diffTarget": 240,
     "repo": "https://github.com/niobio-cash/niobio-node-daemon",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2912866"
+    },
+    "pools": []
   },
   "noz-novocoin": {
     "coin": "NOZ",
     "name": "Novocoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3276965.0",
+    "diffTarget": 140,
     "repo": "https://github.com/lilsiz/novocoin-project",
-    "diffTarget": 140
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3276965"
+    },
+    "pools": []
   },
   "nutu-nutucoin": {
     "coin": "NUTU",
     "name": "Nutucoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4357466.0",
+    "diffTarget": 240,
     "repo": "https://github.com/nutucoin",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4357466"
+    },
+    "pools": []
   },
   "nbx-nxboost": {
     "coin": "NBX",
     "name": "NXboost",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3064367",
+    "diffTarget": 120,
     "repo": "https://github.com/nxboost/nx",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3064367"
+    },
+    "pools": []
   },
   "omb-ombre": {
     "coin": "OMB",
     "name": "Ombre",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3063727.0",
+    "diffTarget": 60,
     "repo": "https://github.com/ombre-projects/ombre",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3063727"
+    },
+    "pools": []
   },
   "pars-parsicoin": {
     "coin": "PARS",
     "name": "Parsicoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3381737.0",
+    "diffTarget": 120,
     "repo": "https://github.com/ParsiCoin/parsicoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3381737"
+    },
+    "pools": []
   },
   "peer-peermine": {
     "coin": "PEER",
     "name": "Peermine",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4621293.0",
+    "diffTarget": 60,
     "repo": "https://github.com/Peermine/Peermine",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4621293"
+    },
+    "pools": []
   },
   "pk-pennykoin": {
     "coin": "PK",
     "name": "Pennykoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3783719",
+    "diffTarget": 180,
     "repo": "https://github.com/Pennykoin",
-    "diffTarget": 180
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3783719"
+    },
+    "pools": []
   },
   "phx-pheonix": {
     "coin": "PHX",
     "name": "Pheonix",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3163251.0",
+    "diffTarget": 120,
     "repo": null,
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3163251"
+    },
+    "pools": []
   },
   "pnks-pinkstarcoin": {
     "coin": "PNKS",
     "name": "Pinkstarcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2723196.0",
+    "diffTarget": 60,
     "repo": "https://github.com/Jachi84/pinkstarcoin",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2723196"
+    },
+    "pools": []
   },
   "pstar-pinkstarcoinv2": {
     "coin": "PSTAR",
     "name": "PinkstarcoinV2",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2723196.0",
+    "diffTarget": 240,
     "repo": "https://github.com/Jachi84/pinkstarcoin",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2723196"
+    },
+    "pools": []
   },
   "plura-pluracoin": {
     "coin": "PLURA",
     "name": "Pluracoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3081442.0",
+    "diffTarget": 120,
     "repo": "https://github.com/pluracoin/pluracoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3081442"
+    },
+    "pools": []
   },
   "xpp-privatepay": {
     "coin": "XPP",
     "name": "PrivatePay",
+    "activelyMined": true,
     "algorithm": "Cryptonight Fast",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4496100",
+    "diffTarget": 120,
     "repo": "https://github.com/GoPrivatePay",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4496100"
+    },
+    "pools": []
   },
   "xpr-prosus": {
     "coin": "XPR",
     "name": "Prosus",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": null,
+    "diffTarget": 120,
     "repo": "https://github.com/ProsusCorp/prosus",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": null
+    },
+    "pools": []
   },
   "purk-purkcoin": {
     "coin": "PURK",
     "name": "Purkcoin",
+    "activelyMined": true,
     "algorithm": "wild_keccak",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3213127",
+    "diffTarget": 90,
     "repo": "https://github.com/purkproject/purk",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3213127"
+    },
+    "pools": []
   },
   "pyx-pyrexcoin": {
     "coin": "PYX",
     "name": "Pyrexcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2788839.0",
+    "diffTarget": 60,
     "repo": "https://github.com/pyrexcoin-project/pyrexcoin",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2788839"
+    },
+    "pools": []
   },
   "qrl-quantum": {
     "coin": "QRL",
     "name": "Quantum Resistance Ledger",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1730273.0",
+    "diffTarget": 60,
     "repo": "https://github.com/theQRL",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=1730273"
+    },
+    "pools": []
   },
   "qwc-qwertycoin": {
     "coin": "QWC",
     "name": "Qwertycoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2881418.0",
+    "diffTarget": 120,
     "repo": "https://github.com/qwertycoin-org/qwertycoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2881418"
+    },
+    "pools": []
   },
   "recl-recoal": {
     "coin": "RECL",
     "name": "ReCoal",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4429386.0",
+    "diffTarget": 120,
     "repo": "https://github.com/ReCoal/recoal",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4429386"
+    },
+    "pools": []
   },
   "rd-redwind": {
     "coin": "RD",
     "name": "Redwind",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=791563.0",
+    "diffTarget": 120,
     "repo": null,
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=791563"
+    },
+    "pools": []
   },
   "rrc-royalradiocash": {
     "coin": "RRC",
     "name": "RoyalRadioCash",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2491607.0",
+    "diffTarget": 60,
     "repo": "https://github.com/royalradiocash/royalradiocash",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2491607"
+    },
+    "pools": []
   },
   "xry-royalties": {
     "coin": "XRY",
     "name": "Royalties",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2046563.0",
+    "diffTarget": 120,
     "repo": "https://github.com/Vetro7/RoyaltiesCLI",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2046563"
+    },
+    "pools": []
   },
   "ryo-ryo": {
     "coin": "RYO",
     "name": "Ryo",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4413010",
+    "diffTarget": 240,
     "repo": "https://github.com/ryo-currency",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4413010"
+    },
+    "pools": []
   },
   "sdm-sadomi": {
     "coin": "SDM",
     "name": "Sadomi",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": null,
+    "diffTarget": 120,
     "repo": "https://github.com/sadomi/sadomi",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": null
+    },
+    "pools": []
   },
   "xrn-saronite": {
     "coin": "XRN",
     "name": "Saronite",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4004235",
+    "diffTarget": 60,
     "repo": "https://github.com/Saronite/saronite",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4004235"
+    },
+    "pools": []
   },
   "xsd-scordite": {
     "coin": "XSD",
     "name": "Scordite",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4621537.0",
+    "diffTarget": 60,
     "repo": "https://github.com/scordite/scordite",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4621537"
+    },
+    "pools": []
   },
   "shht-secretcoin": {
     "coin": "SHHT",
     "name": "SecretCoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3553030",
+    "diffTarget": 60,
     "repo": "https://github.com/secretcoin/",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3553030"
+    },
+    "pools": []
   },
   "shg-shang": {
     "coin": "SHG",
     "name": "Shang",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2991596.0",
+    "diffTarget": 120,
     "repo": null,
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2991596"
+    },
+    "pools": []
   },
   "sikka-sikka": {
     "coin": "SIKKA",
     "name": "Sikka",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2197967.0",
+    "diffTarget": 120,
     "repo": "https://github.com/Sikka-Pay/Sikka",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2197967"
+    },
+    "pools": []
   },
   "smpl-simplecoin": {
     "coin": "SMPL",
     "name": "SimpleCoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4557309.0",
+    "diffTarget": 60,
     "repo": null,
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4557309"
+    },
+    "pools": []
   },
   "solace-solace": {
     "coin": "SOLACE",
     "name": "Solace Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3297659.0",
+    "diffTarget": 60,
     "repo": "https://github.com/schmeckles22/SolaceCoin",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3297659"
+    },
+    "pools": []
   },
   "solcash-solcash": {
     "coin": "SOLCASH",
     "name": "Solcash",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3199163",
+    "diffTarget": 60,
     "repo": "https://github.com/solcashorg/solcash",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3199163"
+    },
+    "pools": []
   },
   "sdi-soldi": {
     "coin": "SDI",
     "name": "Soldi",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3225185.0",
+    "diffTarget": 60,
     "repo": "https://github.com/bitsoldi/soldi",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3225185"
+    },
+    "pools": []
   },
   "spes-spescoin": {
     "coin": "SPES",
     "name": "SpesCoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2870436.0",
+    "diffTarget": 100,
     "repo": "https://github.com/SpesCoin/spescoin",
-    "diffTarget": 100
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2870436"
+    },
+    "pools": []
   },
   "xme-spotme": {
     "coin": "XME",
     "name": "SPOTme Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2701367",
+    "diffTarget": 120,
     "repo": "https://github.com/spotme-main/",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2701367"
+    },
+    "pools": []
   },
   "stdu-stardust": {
     "coin": "STDU",
     "name": "Stardust",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4485922.0",
+    "diffTarget": 120,
     "repo": "https://github.com/goodstardust/stardustcoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4485922"
+    },
+    "pools": []
   },
   "sup-superior": {
     "coin": "SUP",
     "name": "Superior Coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2088169.0",
+    "diffTarget": 120,
     "repo": "https://github.com/TheSuperiorCoin/TheSuperiorCoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2088169"
+    },
+    "pools": []
   },
   "tls-thalos": {
     "coin": "TLS",
     "name": "Thalos",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4626657.0",
+    "diffTarget": 100,
     "repo": "https://github.com/thalosorg/thalos",
-    "diffTarget": 100
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4626657"
+    },
+    "pools": []
   },
   "tokl-toklio": {
     "coin": "TOKL",
     "name": "Toklio",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4552543.0",
+    "diffTarget": 120,
     "repo": "https://github.com/Toklio-project/Toklio",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4552543"
+    },
+    "pools": []
   },
   "trit-triton": {
     "coin": "TRIT",
     "name": "Triton",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2944793.0",
+    "diffTarget": 180,
     "repo": "https://github.com/Triton-io/Triton",
-    "diffTarget": 180
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2944793"
+    },
+    "pools": []
   },
   "trkc-truckcoin": {
     "coin": "TRKC",
     "name": "Truckcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2257104.0",
+    "diffTarget": 240,
     "repo": "https://github.com/truckit/Truckcoin",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2257104"
+    },
+    "pools": []
   },
   "tvvc-tvvchain": {
     "coin": "TVVC",
     "name": "TVVChain",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4411116.0",
+    "diffTarget": 60,
     "repo": "https://github.com/Tvvchainproject/Tvvchain",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4411116"
+    },
+    "pools": []
   },
   "tyc-tychecash": {
     "coin": "TYC",
     "name": "Tychecash",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2910750.0",
+    "diffTarget": 120,
     "repo": "https://github.com/blockchain-next/TycheCash",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2910750"
+    },
+    "pools": []
   },
   "una-unacoin": {
     "coin": "UNA",
     "name": "Unacoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2289043.0",
+    "diffTarget": 90,
     "repo": "https://github.com/TheUnAProject/UnA",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2289043"
+    },
+    "pools": []
   },
   "uniq-uniq": {
     "coin": "UNIQ",
     "name": "uniQ",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4415541",
+    "diffTarget": 90,
     "repo": "https://github.com/uniqnetwork/uniq/releases/",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4415541"
+    },
+    "pools": []
   },
   "vay-valentine": {
     "coin": "VAY",
     "name": "Valentine",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2946937.0",
+    "diffTarget": 120,
     "repo": "https://github.com/valentinecoin/cryptonote",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2946937"
+    },
+    "pools": []
   },
   "vcn-valicoin": {
     "coin": "VCN",
     "name": "Valicoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3883857.0",
+    "diffTarget": 120,
     "repo": "https://github.com/Valicoin/Valicoin",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3883857"
+    },
+    "pools": []
   },
   "vest-vesta": {
     "coin": "VEST",
     "name": "Vesta",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2939250.0",
+    "diffTarget": 60,
     "repo": "https://github.com/vesta-official/vesta",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=2939250"
+    },
+    "pools": []
   },
   "wtip-worktips": {
     "coin": "WTIP",
     "name": "Worktips",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3086019.0",
+    "diffTarget": 120,
     "repo": "https://github.com/Vordas/worktips",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3086019"
+    },
+    "pools": []
   },
   "wow-wownero": {
     "coin": "WOW",
     "name": "Wownero",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3088712.0",
+    "diffTarget": 300,
     "repo": "https://github.com/wownero/wownero",
-    "diffTarget": 300
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3088712"
+    },
+    "pools": []
   },
   "wrkz-wrkzcoin": {
     "coin": "WRKZ",
     "name": "Wrkzcoin",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4537801.0",
+    "diffTarget": 60,
     "repo": "https://github.com/wrkzdev/wrkzcoin",
-    "diffTarget": 60
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4537801"
+    },
+    "pools": []
   },
   "x12-x12": {
     "coin": "X12",
     "name": "X12",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4414415.0",
+    "diffTarget": 300,
     "repo": "https://github.com/x12project/x12-core",
-    "diffTarget": 300
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4414415"
+    },
+    "pools": []
   },
   "x3c-x3coin": {
     "coin": "X3C",
     "name": "X3coin",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4447481",
+    "diffTarget": 240,
     "repo": "https://github.com/x3c/x3coin",
-    "diffTarget": 240
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4447481"
+    },
+    "pools": []
   },
   "drop-xdrop": {
     "coin": "DROP",
     "name": "xDrop",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4556718.0",
+    "diffTarget": 120,
     "repo": "https://github.com/xDropProject/xDrop",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4556718"
+    },
+    "pools": []
   },
   "zbk-zbucks": {
     "coin": "ZBK",
     "name": "Zbucks",
+    "activelyMined": true,
     "algorithm": "Cryptonight Heavy",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4625226.0",
+    "diffTarget": 120,
     "repo": "https://github.com/zbucks-project/zbucks",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4625226"
+    },
+    "pools": []
   },
   "zep-zephyr": {
     "coin": "ZEP",
     "name": "Zephyr Protocol",
+    "activelyMined": true,
     "algorithm": "Cryptonight",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3756568",
+    "diffTarget": 90,
     "repo": "https://github.com/zephyr-protocol",
-    "diffTarget": 90
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3756568"
+    },
+    "pools": []
   },
   "zucc-zuccbucc": {
     "coin": "ZUCC",
     "name": "ZuccBucc",
+    "activelyMined": true,
     "algorithm": "Cryptonight v7",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3761715.0",
+    "diffTarget": 120,
     "repo": "https://github.com/zuccbucc-project",
-    "diffTarget": 120
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=3761715"
+    },
+    "pools": []
   },
   "ft-42": {
     "coin": "FT",
     "name": "42",
+    "activelyMined": true,
     "algorithm": "Cryptonight Lite v1",
-    "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4694014.0",
     "repo": "https://github.com/FourtyTwo/42",
+    "diffTarget": 30,
     "forkedFrom": "trtl-turtlecoin",
-    "diffTarget": 30
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4694014"
+    },
+    "pools": []
+  },
+  "maze-maze": {
+    "coin": "MAZE",
+    "name": "Maze",
+    "activelyMined": true,
+    "algorithm": "Cryptonight v7",
+    "diffTarget": 120,
+    "repo": "https://github.com/maze-project/maze",
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4719233",
+      "discord": "https://discord.gg/SU66jEu",
+      "twitter": "https://twitter.com/mazecurrency"
+    },
+    "pools": [
+      "http://youpool.io/MAZE",
+      "http://know.miningpool.gq/maze/",
+      "http://maze.52hash.com/"
+    ]
+  },
+  "mox-mox": {
+    "coin": "MOX",
+    "name": "Mox",
+    "activelyMined": true,
+    "algorithm": "Cryptonight Red",
+    "repo": "https://github.com/mox-project/MoX",
+    "diffTarget": 120,
+    "website": "http://getmox.org/",
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4719233",
+      "discord": "https://discord.gg/tkcPZVF",
+      "twitter": "https://twitter.com/Project_MoX"
+    },
+    "pools": []
+  },
+  "bim-bitminer": {
+    "coin": "BIM",
+    "name": "Bitminer",
+    "activelyMined": true,
+    "algorithm": "Cryptonight",
+    "repo": "https://github.com/Bitminereu/bitminercoinv3",
+    "diffTarget": 120,
+    "website": "http://bitminercoin.org",
+    "links": {
+      "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4005575",
+      "explorer": "http://bitminercoin.org/block-explorer",
+      "facebook": "https://www.facebook.com/bitminereu/",
+      "twitter": "https://twitter.com/bitminereu",
+      "discord": "https://discord.gg/CVzETWP"
+    },
+    "pools": [
+      "http://youpool.io/BIM/"
+    ]
+  },
+  "cch-citicash": {
+    "coin": "CCH",
+    "name": "Citicash",
+    "activelyMined": true,
+    "repo": "https://github.com/citicashio/citicash",
+    "algorithm": "Cryptonight Heavy",
+    "links": {},
+    "pools": []
   }
 }
