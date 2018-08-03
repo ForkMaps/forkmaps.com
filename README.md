@@ -7,9 +7,7 @@ This project's goal is to maintain an accurate and current cryptonote fork chart
 ## Contributing
 All of the coin data is maintained by community contributors.
 #### Coin Data
-Add or update coin data by modifying the coins.json file.  For convenience, [here's a separate repo](https://github.com/jerme404/forkmaps-json-cryptonote) with only that file.
-
-Please run your changes through a JSON validator before submitting a PR.
+For convenience, cryptonote coin data is maintained in the [forkmaps-json-cryptonote](https://github.com/jerme404/forkmaps-json-cryptonote) repo.
 
 ## Build Setup
 
