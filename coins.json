@@ -237,6 +237,7 @@
     "algorithm": "Cryptonight Lite v1",
     "bitcointalkAnn": "https://bitcointalk.org/index.php?topic=4474605",
     "repo": "https://github.com/arqma",
+    "website": "https://arqma.com/",
     "diffTarget": 240
   },
   "rto-arto": {
