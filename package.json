@@ -1,7 +1,7 @@
 {
-  "name": "forknote-tree",
+  "name": "forkmaps.com",
   "version": "1.0.0",
-  "description": "Cryptonote fork tree",
+  "description": "Map of coin forks",
   "author": "JerMe404",
   "license": "MIT",
   "scripts": {
@@ -11,15 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jerme404/forknote-tree.git"
+    "url": "git+https://github.com/jerme404/ForkMaps/forkmaps.com.git"
   },
   "bugs": {
-    "url": "https://github.com/jerme404/forknote-tree/issues"
+    "url": "https://github.com/ForkMaps/forkmaps.com/issues"
   },
-  "homepage": "http://forknote.us",
+  "homepage": "http://forkmaps.com",
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

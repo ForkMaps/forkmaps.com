@@ -8,26 +8,29 @@
 </template>
 
 <script>
-import NavBar from './components/NavBar';
+import NavBar from './components/navBar';
 
 export default {
-  name: 'App',
-  components: {
+    name: 'App',
+    components: {
       'nav-bar': NavBar
-  }
+    },
+    created () {
+        this.$store.dispatch('loadCoins')
+    }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 }
 body {
     margin: 0px;
@@ -35,8 +38,8 @@ body {
 }
 .main-content {
     width: 100%;
-    overflow-y: scroll;
-    background-color: #FFFFFF;
+    background-color: #FFFAFA;
     display: flex;
+    flex-grow: 1;
 }
 </style>

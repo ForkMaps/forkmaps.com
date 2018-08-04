@@ -1,1 +1,1 @@
-export {default} from './CoinList.vue'
+export {default} from './coinList.vue';
