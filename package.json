@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Map of coin forks",
   "author": "JerMe404",
-  "license": "MIT",
+  "license": "AGPL-v3",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
