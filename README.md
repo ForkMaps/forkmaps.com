@@ -2,7 +2,7 @@
 
 > forkmaps.com website
 
-This project's goal is to maintain an accurate and current cryptonote fork chart.
+This project's goal is to maintain an accurate and current coin fork chart.
 
 ## Contributing
 All of the coin data is maintained by community contributors.
