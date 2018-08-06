@@ -43,14 +43,15 @@
 
 <style scoped>
     .coin-row {
-
         display: flex;
         flex-direction: row;
         flex-grow: 1 100%;
         align-items: center;
         flex-shrink: 0;
-        padding: 0px 16px;
+        padding: 8px 16px;
         margin-bottom: 8px;
+        background-color: #FFFFFF;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
     .coin-title {
         display: flex;
@@ -80,10 +81,9 @@
         border-bottom: 1px solid #CCC;
     }
     .coin-link {
-        font-size: 14px;
+        font-size: 16px;
         text-decoration: none;
         text-transform: uppercase;
-
         font-weight: 500;
     }
     .coin-link:hover {
@@ -93,11 +93,11 @@
         color: #3ABEFF;
     }
     .link-repo {
-        color: #2E3532;
+        color: #343534;
     }
     @media screen and (orientation:portrait) {
         .coin-row {
-            box-shadow: 0px 1px #DEDEDE;
+
         }
         .coin-title {
             flex-direction: column;
@@ -123,9 +123,6 @@
         }
         .coin-link {
             padding: 8px 16px;
-            border: 1px solid;
-            border-radius: 24px;
-            margin-left: 8px;
         }
         .link-icon {
             display: none;
