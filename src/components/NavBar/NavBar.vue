@@ -49,6 +49,7 @@
         justify-content: center;
         box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
         z-index: 30;
+        box-sizing: border-box;
     }
     .nav-content {
         max-width: 1100px;
@@ -70,7 +71,7 @@
     }
     .navbar-link {
         padding: 4px 16px;
-        color: #F2F1F0;
+        color: #E2E1E0;
         font-size: 16px;
         text-decoration: none;
         text-transform: uppercase;
@@ -80,13 +81,16 @@
         text-align: center;
     }
     .navbar-link:hover {
-        color: #CFCBCC;
+        border-bottom: 3px solid #33A193;
     }
     .navbar-link.router-link-active,
     .navbar-link.router-link-exact-active {
-
         cursor: pointer;
         border-bottom: 3px solid #53C1B3;
+    }
+    .nav-social:hover {
+        color: #FFFFFF;
+        border-bottom: 3px solid rgba(0,0,0,0);
     }
     .link-image {
         width: 32px;

@@ -8,7 +8,7 @@
             <span class="coin-name">{{coin.name}}</span>
             <span class="coin-ticker">{{coin.coin}}</span>
         </div>
-        <a v-if="coin.website" v-bind:href="coin.website" target="_blank" class="coin-link link-website">
+        <a v-if="coin.website" v-bind:href="coin.website" rel="nofollow" target="_blank" class="coin-link link-website">
             <i class="fas fa-globe link-icon"></i>
             <span class="link-text">website</span>
         </a>
@@ -45,13 +45,12 @@
     .coin-row {
         display: flex;
         flex-direction: row;
-        flex-grow: 1 100%;
         align-items: center;
         flex-shrink: 0;
         padding: 8px 16px;
-        margin-bottom: 8px;
-        background-color: #FFFFFF;
+        background-color: #FDFDFD;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        box-sizing: border-box;
     }
     .coin-title {
         display: flex;
