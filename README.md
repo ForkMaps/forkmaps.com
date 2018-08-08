@@ -1,13 +1,13 @@
 ![forkmaps logo](static/img/forkmaps_b_retina.png)
 
-## Contributing
+### Contributing
 
 
-### Coin Data
+#### Coin Data
 
 All of the coin data is maintained by community contributors.  For convenience, cryptonote coin data is maintained in the [cryptonote](https://github.com/ForkMaps/cryptonote) repo.
 
-### Website
+#### Website
 
 ```bash
 # clone the project
