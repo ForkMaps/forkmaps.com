@@ -1,13 +1,21 @@
 ![forkmaps logo](static/img/forkmaps_b_retina.png)
 
 ## Contributing
-All of the coin data is maintained by community contributors.
-#### Coin Data
-For convenience, cryptonote coin data is maintained in the [cryptonote](https://github.com/ForkMaps/cryptonote) repo.
 
-## Build Setup
 
-``` bash
+### Coin Data
+
+All of the coin data is maintained by community contributors.  For convenience, cryptonote coin data is maintained in the [cryptonote](https://github.com/ForkMaps/cryptonote) repo.
+
+### Website
+
+```bash
+# clone the project
+git clone https://github.com/ForkMaps/forkmaps.com.git
+
+# change working directory
+cd forkmaps.com
+
 # install dependencies
 npm install
 
@@ -16,7 +24,5 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
+
