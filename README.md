@@ -1,8 +1,4 @@
-# forkmaps.com
-
-> forkmaps.com website
-
-This project's goal is to maintain an accurate and current coin fork chart.
+![forkmaps logo](https://raw.githubusercontent.com/ForkMaps/forkmaps.com/master/static/img/forkmaps_b_retina.png.png)
 
 ## Contributing
 All of the coin data is maintained by community contributors.
