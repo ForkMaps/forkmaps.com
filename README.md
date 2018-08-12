@@ -3,8 +3,8 @@
 ## Roadmap
 
 * Sort, filter, search
-* Display coin algorithms
-* Addional links for coins (social media, wallet generators, etc.)
+* ~~Display coin algorithms~~
+* ~~Addional links for coins (social media, wallet generators, etc.)~~
 * Fork timeline
 * Add other coin families
 
