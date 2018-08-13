@@ -2,7 +2,6 @@
     <div class="coin-row">
         <div class="coin-icon" v-if="coin.icon" v-bind:style="{'background': 'url(' + coin.icon + ')  no-repeat center center', 'background-size': 'contain'}"></div>
         <div v-else class="coin-icon"></div>
-        <!--<img v-if="coin.icon" v-bind:src="coin.icon" class="coin-icon" />-->
         <div v-else class="coin-icon-placeholder"></div>
         <div class="coin-title">
             <span class="coin-name">{{coin.name}}</span>
@@ -12,13 +11,6 @@
             <i class="fas fa-globe link-icon"></i>
             <span class="link-text">website</span>
         </a>
-        <!--<a v-if="coin.website" v-bind:href="coin.website" target="_blank" class="coin-link link-website">
-            <i class="fas fa-external-link-alt"></i>
-        </a>-->
-        <!--<a v-if="coin.repo" v-bind:href="coin.website" target="_blank" class="coin-link link-repo">
-            <i v-if="coin.repo.includes('github')" class="fab fa-github"></i>
-            <i v-if="coin.repo.includes('bitbucket')" class="fab fa-bitbucket"></i>
-        </a>-->
         <a v-if="coin.repo" v-bind:href="coin.repo" target="_blank" class="coin-link link-repo">
             <!-- Icon links -->
             <i v-if="coin.repo.includes('github')" class="fab fa-github link-icon"></i>
@@ -29,7 +21,6 @@
             <span v-else-if="coin.repo.includes('bitbucket')" class="link-text">bitbucket</span>
             <span v-else class="link-text">repo</span>
         </a>
-        <!--<div style="width: 52px; height: 52px; background-color: #000;"></div>-->
     </div>
 </template>
 

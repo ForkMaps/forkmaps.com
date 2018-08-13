@@ -113,7 +113,9 @@
             display: none;
         }
     }
-    @media screen and (orientation:landscape) {
-
+    @media all and (min-width: 1800px) {
+        .nav-content {
+            max-width: 1600px;
+        }
     }
 </style>
