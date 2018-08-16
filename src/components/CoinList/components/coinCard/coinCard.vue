@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="coin-links">
-            <a v-for="(link, key, index) in  coin.links" v-bind:href="link" v-bind:title="key" rel="nofollow" target="_blank" class="coin-link link-website">
+            <a v-for="(link, key, index) in  coin.links" v-bind:href="link" v-bind:title="key.charAt(0).toUpperCase() + key.substr(1)" rel="nofollow" target="_blank" class="coin-link link-website">
                 <i v-if="key == 'bitcointalkAnn'" class="fab fa-bitcoin link-icon"></i>
                 <i v-else-if="key == 'discord'" class="fab fa-discord link-icon"></i>
                 <i v-else-if="key == 'facebook'" class="fab fa-facebook link-icon"></i>

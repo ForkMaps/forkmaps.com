@@ -100,9 +100,16 @@
                 hideEdgesOnDrag: true
             },
             layout: {
-                hierarchical: {
-                    enabled: false,
-                    sortMethod: 'directed'
+                improvedLayout: false
+            },
+            physics: {
+                enabled: true,
+                stabilization: {
+                    enabled: true,
+                    iterations: 100,
+                    updateInterval: 100,
+                    onlyDynamicEdges: false,
+                    fit: true
                 }
             }
         };
@@ -127,7 +134,6 @@
             background: "#FFFFFF",
             border: "#FFFFFF"
         };
-
 
         if (coin.icon) {
             this.shape = 'image';
