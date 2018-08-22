@@ -1,1 +1,1 @@
-export {default} from './networkMap.vue';
+export { default } from './NetworkMap.vue';

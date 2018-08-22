@@ -2,33 +2,45 @@
     <div class="list-page">
         <div class="header-wrapper">
             <div class="list-header">
-                <span class="header-item">{{coinList.length}} CryptoNote coins</span>
+                <span class="header-item">{{coinCount}} CryptoNote coins</span>
                 <div class="input-wrapper">
-                    
+                    <!--<button @click="sort('coin')">Sort</button>
+                    <span>{{coinSort.sortBy}}</span>-->
                 </div>
             </div>
         </div>
-        <div class="list-content">
-            <coin-card v-for="(coin, key, index) in  coinList" :coin="coin" :key="key">
+        <div class="list-content" v-if="coinList">
+            <coin-card v-for="(coin, key, index) in  coinList" :coin="coin" :key="coin.coin + coin.name">
             </coin-card>
         </div>
+        <!--<span v-for="algo in algos">{{algo}}</span>-->
     </div>
 </template>
 
 <script>
-    import CoinCard from './components/coinCard';
-    import CoinRow from './components/coinRow';
-    import { mapGetters } from 'vuex';
+    import store from '@/store';
+    import CoinCard from './components/CoinCard';
+    import { mapActions, mapGetters, mapState } from 'vuex';
 
     export default {
         name: 'coinList',
         components: {
-            'coin-card': CoinCard,
-            'coin-row': CoinRow
+            'coin-card': CoinCard
         },
         computed: {
             ...mapGetters([
+                'algos',
+                'coinCount',
                 'coinList'
+            ]),
+            ...mapState({
+                coinSort: state => state.coins.coinSort,
+                loading: state => state.coins.loading
+            })
+        },
+        methods: {
+            ...mapActions([
+                'sort'
             ])
         }
     };
@@ -88,15 +100,28 @@
             padding: 8px 8px 16px 8px;
         }
     }
-    @media all and (min-width: 1800px) {
-        .coin-card {
-            width: calc((100% /4) - 16px);
+    @media all and (min-width: 1600px) {
+        .list-header {
+            max-width: 1400px;
         }
+        .list-content {
+            max-width: 1400px;
+        }
+    }
+    @media all and (min-width: 1800px) {
         .list-header {
             max-width: 1600px;
         }
         .list-content {
             max-width: 1600px;
+        }
+    }
+    @media all and (min-width: 2200px) {
+        .list-header {
+            max-width: 2000px;
+        }
+        .list-content {
+            max-width: 2000px;
         }
     }
 </style>

@@ -24,7 +24,7 @@
 <script>
 
     export default {
-        name: 'tree-node',
+        name: 'treeNode',
         props: {
             coin: Object,
             isLast: Boolean

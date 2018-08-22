@@ -1,1 +1,1 @@
-export {default} from './coinTree.vue';
+export { default } from './CoinTree.vue';

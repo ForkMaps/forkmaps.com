@@ -8,11 +8,6 @@
                     <span>Coin List</span>
                 </div>
             </router-link>
-            <!--
-            <div class="link-wrapper">
-                <router-link to="/tree" class="navbar-link" exact>Tree View</router-link>
-            </div>
-            -->
             <router-link to="/forkMap" class="navbar-link" exact>
                 <div class="link-wrapper">
                     <span>Fork Map</span>
@@ -113,9 +108,19 @@
             display: none;
         }
     }
+    @media all and (min-width: 1600px) {
+        .nav-content {
+            max-width: 1400px;
+        }
+    }
     @media all and (min-width: 1800px) {
         .nav-content {
             max-width: 1600px;
+        }
+    }
+    @media all and (min-width: 2200px) {
+        .nav-content {
+            max-width: 2000px;
         }
     }
 </style>

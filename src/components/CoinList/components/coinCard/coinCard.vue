@@ -42,9 +42,8 @@
 </template>
 
 <script>
-
     export default {
-        name: 'coin-card',
+        name: 'coinCard',
         props: ['coin']
     };
 </script>
@@ -140,6 +139,11 @@
     @media all and (min-width: 1800px) {
         .coin-card {
             width: calc((100% /4) - 16px);
+        }
+    }
+    @media all and (min-width: 2200px) {
+        .coin-card {
+            width: calc((100% /5) - 16px);
         }
     }
 </style>
