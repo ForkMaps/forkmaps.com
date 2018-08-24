@@ -1,19 +1,3 @@
-import axios from 'axios';
-
-const getDefaultState = () => {
-    return {
-        coins: {},
-        loading: false,
-        coinSort: {
-            ascending: true,
-            sortBy: 'name'
-        }
-    };
-};
-
-// initial state
-const state = getDefaultState();
-
 const getters = {
     algos: state => {
 
@@ -33,7 +17,28 @@ const getters = {
     },
     coinList: state => {
 
-        let coinList = Object.values(state.coins);
+        // Filter and map the coins.
+        let coinList = Object.values(state.coins).reduce((filtered, coin) => {
+
+            if (!isSearchMatch(state.coinSearch, coin)) {
+                return filtered;
+            }
+
+            if (coin.links.facebook) {
+                delete coin.links.facebook;
+            }
+            if (coin.links.reddit) {
+                delete coin.links.reddit;
+            }
+            if (coin.links.telegram) {
+                delete coin.links.telegram;
+            }
+
+            filtered.push(coin);
+            return filtered;
+        }, []);
+
+        // Sort the coin list.
         let sortBy = state.coinSort.sortBy || 'name';
         coinList.sort((a, b) => {
 
@@ -63,9 +68,9 @@ const getters = {
                 if (!coinNodes[parentKey]) {
 
                     let parent = coins[parentKey];
-                    coinNodes[parentKey] = new coinNode(parentKey, parent);
+                    coinNodes[parentKey] = new CoinNode(parentKey, parent);
                 }
-                coinNodes[key] = new coinNode(coinKey, coinVal);
+                coinNodes[key] = new CoinNode(coinKey, coinVal);
                 coinEdges.push({
                     from: parentKey,
                     to: coinKey,
@@ -132,7 +137,33 @@ const getters = {
     }
 };
 
-const coinNode = function (key, coin) {
+const isSearchMatch = function (searchFor, coin) {
+
+    if (!searchFor || searchFor.length === 0) {
+
+        return true;
+    }
+
+    let coinSearch = searchFor.toUpperCase();
+    let searchProps = [
+        coin.coin,
+        coin.name,
+        coin.algorithm
+    ];
+
+    if (coin.forkedFrom) {
+
+        if (Array.isArray(coin.forkedFrom)) {
+            searchProps.push(coin.forkedFrom.join(''));
+        } else {
+            searchProps.push(coin.forkedFrom);
+        }
+    }
+    
+    return searchProps.join('').toUpperCase().includes(coinSearch);
+};
+
+const CoinNode = function (key, coin) {
 
     this.id = key;
     this.label = coin.coin;
@@ -161,47 +192,4 @@ const coinNode = function (key, coin) {
     }
 };
 
-const actions = {
-    loadCoins: (context) => {
-        context.commit('LOADING_STATUS', true);
-        axios('https://raw.githubusercontent.com/ForkMaps/cryptonote/master/dist/coins.json')
-        .then((response) => {
-            context.commit('COINS_UPDATED', response.data);
-            context.commit('LOADING_STATUS', false);
-        })
-        .catch((err) => {
-            console.error(err);
-        });
-    },
-    sort: ({ commit }, sortBy) => {
-        commit('SORT', sortBy);
-    }
-};
-
-const mutations = {
-    LOADING_STATUS: (state, loading) => {
-        state.loading = loading;
-    },
-    COINS_UPDATED: (state, coins) => {
-        state.coins = coins;
-    },
-    SORT: (state, sortBy) => {
-
-        // Reset sort order if new sort.
-        if (state.coinSort.sortBy != sortBy) {
-
-            state.coinSort.ascending = getDefaultState().coinSort.ascending;
-            state.coinSort.sortBy = sortBy;
-        } else {
-            // Reverse search order.
-            state.coinSort.ascending = !state.coinSort.ascending;
-        }
-    }
-};
-
-export default {
-    state,
-    getters,
-    actions,
-    mutations
-};
+export default getters;

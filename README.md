@@ -1,4 +1,4 @@
-![forkmaps logo](https://raw.githubusercontent.com/ForkMaps/forkmaps.com/master/static/img/forkmaps_b_retina.png.png)
+![forkmaps logo](https://raw.githubusercontent.com/ForkMaps/forkmaps.com/master/static/img/forkmaps_b_retina.png)
 
 ## Contributing
 All of the coin data is maintained by community contributors.

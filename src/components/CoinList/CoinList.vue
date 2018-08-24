@@ -2,10 +2,19 @@
     <div class="list-page">
         <div class="header-wrapper">
             <div class="list-header">
-                <span class="header-item">{{coinCount}} CryptoNote coins</span>
+                <span class="coin-count">{{coinList.length}} coins</span>
                 <div class="input-wrapper">
-                    <!--<button @click="sort('coin')">Sort</button>
-                    <span>{{coinSort.sortBy}}</span>-->
+                    <div class="search-wrapper">
+
+                        <input type="text"
+                            class="input-search"
+                            v-model="searchTerm"
+                            placeholder="search"/>
+                        <i v-if="searchTerm === ''" class="fas fa-search input-icon"></i>
+                        <i v-if="searchTerm != ''" v-on:click="clearSearch()"
+                            class="fas fa-times-circle input-icon input-button">
+                        </i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,14 +43,27 @@
                 'coinList'
             ]),
             ...mapState({
+                coinSearch: state => state.coins.coinSearch,
                 coinSort: state => state.coins.coinSort,
                 loading: state => state.coins.loading
-            })
+            }),
+            searchTerm: {
+                get () {
+                    return this.coinSearch;
+                },
+                set (value) {
+                    this.search(value);
+                }
+            }
         },
         methods: {
             ...mapActions([
+                'search',
                 'sort'
-            ])
+            ]),
+            clearSearch () {
+                this.search('');
+            }
         }
     };
 </script>
@@ -52,6 +74,42 @@
         flex-direction: row;
         flex-grow: 1;
         justify-content: flex-end;
+    }
+    .search-wrapper {
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-direction: row;
+        align-items: center;
+        padding: 2px 4px;
+    }
+    .search-wrapper:focus-within {
+        box-shadow: 0px 1px 0px #AAA;
+    }
+    .input-search {
+        font-size: 18px;
+        font-weight: 600;
+        border: 0px;
+        outline: none;
+        color: #4E5552;
+    }
+    ::placeholder {
+        color: #AAA;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #AAA;
+    }
+    .coin-count {
+        color: #4E5552;
+        font-weight: 400;
+    }
+    .input-icon {
+        color: #AAA;
+        font-size: 18px;
+        padding: 4px;
+    }
+    .input-button:hover {
+        color: #CC5858;
     }
     .list-page {
         width: 100%;
@@ -81,8 +139,9 @@
         flex-shrink: 0;
         flex-grow: 0;
         font-size: 16px;
-        padding: 16px;
+        padding: 12px;
         box-sizing: border-box;
+        align-items: center;
     }
     .list-content {
         width: 100%;
