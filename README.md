@@ -2,7 +2,7 @@
 
 ## Roadmap
 
-* Sort, filter, search
+* Sort, filter, ~~search~~
 * ~~Display coin algorithms~~
 * ~~Addional links for coins (social media, wallet generators, etc.)~~
 * Fork timeline
