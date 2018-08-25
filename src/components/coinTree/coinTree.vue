@@ -9,7 +9,7 @@
 
 <script>
     import axios from 'axios';
-    import TreeNode from './components/treeNode';
+    import TreeNode from './components/TreeNode';
 
     export default {
         name: 'coinTree',

@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import Coins from './modules/coins';
+import Coins from './Coins';
 
 Vue.use(Vuex);
 

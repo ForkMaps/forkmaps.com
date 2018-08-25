@@ -45,4 +45,3 @@ All donations go to the community, in the form of giveaways, tips, and bounties.
 # TRTL TRTLv1zqKazWXkWHrM1iPuGtyVzGiZJNTboUA7dQcghJhJ8p1v4bx6QM3YjTcAKvJdFswU6qRUdqrKdiCxpDNGHderQpu47tn2N
 # XMR 4Cf2TfMKhCgJ2vsM3HeBUnYe52tXrvv8X1ajjuQEMUQ8iU8kvUzCSsCEacxFhEmeb2JgPpQ5chdyw3UiTfUgapJBhAHNczWHnc37Wxn5Mo
 ```
-

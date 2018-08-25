@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import NavBar from './components/navBar';
+import NavBar from './components/NavBar';
 
 export default {
     name: 'App',
@@ -21,9 +21,10 @@ export default {
 }
 </script>
 
+<style src='load-awesome/css/square-jelly-box.min.css'></style>
 <style>
 #app {
-    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
