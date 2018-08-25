@@ -21,6 +21,7 @@ export default {
 }
 </script>
 
+<style src='load-awesome/css/square-jelly-box.min.css'></style>
 <style>
 #app {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;

@@ -15,9 +15,6 @@
         components: {
             'map-container': MapContainer
         },
-        data () {
-            return {}
-        },
         computed: {
             ...mapState({
                 loading: state => state.coins.loading

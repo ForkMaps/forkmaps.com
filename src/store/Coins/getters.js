@@ -120,16 +120,6 @@ const getters = {
             },
             layout: {
                 improvedLayout: false
-            },
-            physics: {
-                enabled: true,
-                stabilization: {
-                    enabled: true,
-                    iterations: 100,
-                    updateInterval: 100,
-                    onlyDynamicEdges: false,
-                    fit: true
-                }
             }
         };
 
@@ -159,7 +149,7 @@ const isSearchMatch = function (searchFor, coin) {
             searchProps.push(coin.forkedFrom);
         }
     }
-    
+
     return searchProps.join('').toUpperCase().includes(coinSearch);
 };
 

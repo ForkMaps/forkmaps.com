@@ -2,10 +2,9 @@
     <div class="list-page">
         <div class="header-wrapper">
             <div class="list-header">
-                <span class="coin-count">{{coinList.length}} coins</span>
+                <span class="coin-count" v-if="!loading">{{coinList.length}} coins</span>
                 <div class="input-wrapper">
                     <div class="search-wrapper">
-
                         <input type="text"
                             class="input-search"
                             v-model="searchTerm"
@@ -18,23 +17,25 @@
                 </div>
             </div>
         </div>
-        <div class="list-content" v-if="coinList">
+        <loading-view v-if="loading"></loading-view>
+        <div class="list-content" v-if="!loading && coinList.length > 0">
             <coin-card v-for="(coin, key, index) in  coinList" :coin="coin" :key="coin.coin + coin.name">
             </coin-card>
         </div>
-        <!--<span v-for="algo in algos">{{algo}}</span>-->
     </div>
 </template>
 
 <script>
-    import store from '@/store';
-    import CoinCard from './components/CoinCard';
     import { mapActions, mapGetters, mapState } from 'vuex';
+    import store from '@/store';
+    import LoadingView from '@/components/LoadingView';
+    import CoinCard from './components/CoinCard';
 
     export default {
         name: 'coinList',
         components: {
-            'coin-card': CoinCard
+            'coin-card': CoinCard,
+            'loading-view': LoadingView
         },
         computed: {
             ...mapGetters([
