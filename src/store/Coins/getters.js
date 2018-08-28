@@ -18,20 +18,12 @@ const getters = {
     coinList: state => {
 
         // Filter and map the coins.
-        let coinList = Object.values(state.coins).reduce((filtered, coin) => {
+        let coinList = Object.keys(state.coins).reduce((filtered, key) => {
 
+            let coin = state.coins[key];
+            coin.key = key;
             if (!isSearchMatch(state.coinSearch, coin)) {
                 return filtered;
-            }
-
-            if (coin.links.facebook) {
-                delete coin.links.facebook;
-            }
-            if (coin.links.reddit) {
-                delete coin.links.reddit;
-            }
-            if (coin.links.telegram) {
-                delete coin.links.telegram;
             }
 
             filtered.push(coin);
