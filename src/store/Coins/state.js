@@ -11,10 +11,10 @@ const getDefaultState = () => {
         }
     };
 
-    // Assign to a state object.
+    // Copy default state to state.
     let state = Object.assign({}, defaultState);
 
-    // Add the defaults for use later.
+    // Keep defaults for use later.
     state.defaultState = defaultState;
 
     return state;

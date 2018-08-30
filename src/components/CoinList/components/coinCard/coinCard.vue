@@ -12,9 +12,7 @@
                 <span class="coin-name">{{coin.name}}</span>
                 <span class="coin-algo">{{coin.algorithm}}</span>
             </div>
-
         </div>
-
     </div>
 </template>
 
@@ -31,7 +29,6 @@
         display: flex;
         flex-direction: row;
         flex-shrink: 0;
-        /*padding: 16px;*/
         background-color: #FEFEFE;
         box-sizing: border-box;
     }

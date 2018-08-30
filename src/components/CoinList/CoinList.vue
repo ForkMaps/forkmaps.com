@@ -81,7 +81,6 @@
                 this.selectedCoin = null;
             },
             openDialog (coin) {
-                console.log('open dialog', coin);
                 this.selectedCoin = coin;
                 this.showDialog = true;
             }

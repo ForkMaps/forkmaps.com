@@ -15,6 +15,12 @@ const getters = {
     coinCount: state => {
         return Object.keys(state.coins).length;
     },
+    coinForks: (state) => (coinKey) => {
+        return Object.values(state.coins).filter((coin) => {
+
+            return coin.forkedFrom && coin.forkedFrom === coinKey;
+        });
+    },
     coinList: state => {
 
         // Filter and map the coins.
