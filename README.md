@@ -2,12 +2,13 @@
 
 ## Roadmap
 
-* Sort, filter, ~~search~~
+* Sort, ~~search~~
 * ~~Display coin algorithms~~
 * ~~Addional links for coins (social media, wallet generators, etc.)~~
 * Fork timeline
 * Additional graph types
 * Add other coin families
+* Dashboard with charts like coin fork count, coin age, maybe max supply.
 
 ## Contributing
 
