@@ -8,7 +8,7 @@
 * Fork timeline
 * Additional graph types
 * Add other coin families
-* Dashboard with charts like coin fork count, coin age, max supply, emission length, maybe current circulating.
+* Dashboard with charts like coin fork count, algorithm count, coin age, max supply, emission length, maybe current circulating.
 
 ## Contributing
 
