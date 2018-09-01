@@ -1,5 +1,5 @@
 <template>
-    <div class="coin-card">
+    <div class="coin-card" @click="$emit('openDialog')">
         <div class="coin-icon-wrapper">
             <div class="coin-icon" v-if="coin.icon" v-bind:style="{'background': 'url(' + coin.icon + ')  no-repeat center center', 'background-size': 'contain'}"></div>
             <div v-else class="coin-icon"></div>
@@ -12,36 +12,7 @@
                 <span class="coin-name">{{coin.name}}</span>
                 <span class="coin-algo">{{coin.algorithm}}</span>
             </div>
-            <div class="coin-links">
-                <a v-for="(link, key, index) in  coin.links" v-bind:href="link" v-bind:title="key.charAt(0).toUpperCase() + key.substr(1)" rel="nofollow" target="_blank" class="coin-link link-website">
-                    <i v-if="key == 'bitcointalkAnn'" class="fab fa-bitcoin link-icon"></i>
-                    <i v-else-if="key == 'discord'" class="fab fa-discord link-icon"></i>
-                    <i v-else-if="key == 'facebook'" class="fab fa-facebook link-icon"></i>
-                    <i v-else-if="key == 'reddit'" class="fab fa-reddit link-icon"></i>
-                    <i v-else-if="key == 'telegram'" class="fab fa-telegram link-icon"></i>
-                    <i v-else-if="key == 'twitter'" class="fab fa-twitter link-icon"></i>
-                    <i v-else-if="key == 'website'" class="fas fa-globe link-icon"></i>
-                    <i v-else-if="key == 'repo' && link.includes('github')" class="fab fa-github link-icon"></i>
-                    <i v-else-if="key == 'repo' && link.includes('bitbucket')" class="fab fa-bitbucket link-icon"></i>
-                    <i v-else-if="key == 'repo'" class="fas fa-code link-icon"></i>
-                </a>
-                <a v-if="coin.website" v-bind:href="coin.website" rel="nofollow" target="_blank" class="coin-link link-website">
-                    <i class="fas fa-globe link-icon"></i>
-                    <span class="link-text">website</span>
-                </a>
-                <a v-if="coin.repo" v-bind:href="coin.repo" target="_blank" class="coin-link link-repo">
-                    <!-- Icon links -->
-                    <i v-if="coin.repo.includes('github')" class="fab fa-github link-icon"></i>
-                    <i v-else-if="coin.repo.includes('bitbucket')" class="fab fa-bitbucket link-icon"></i>
-                    <i v-else class="fas fa-code link-icon"></i>
-                    <!-- Span links -->
-                    <span v-if="coin.repo.includes('github')" class="link-text">github</span>
-                    <span v-else-if="coin.repo.includes('bitbucket')" class="link-text">bitbucket</span>
-                    <span v-else class="link-text">repo</span>
-                </a>
-            </div>
         </div>
-
     </div>
 </template>
 
@@ -58,9 +29,12 @@
         display: flex;
         flex-direction: row;
         flex-shrink: 0;
-        /*padding: 16px;*/
-        background-color: #FDFDFD;
+        background-color: #FEFEFE;
         box-sizing: border-box;
+    }
+    .coin-card:hover {
+        cursor: pointer;
+        background-color: #FFFFFF;
     }
     .coin-icon-wrapper {
         display: flex;
@@ -85,7 +59,7 @@
         width: 100%;
         text-align: center;
         padding: 6px 0px;
-        background-color: #4a4b4c;
+        background-color: #556270;
         color: #FFFFFF;
         font-weight: 600;
         font-size: 16px;
@@ -146,6 +120,9 @@
         .coin-card {
             width: calc((100% /2) - 16px);
             box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 1px 3px rgba(0,0,0,0.23);
+        }
+        .coin-card:hover {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.36), 0 1px 3px rgba(0,0,0,0.43);
         }
     }
     @media all and (min-width: 900px) {

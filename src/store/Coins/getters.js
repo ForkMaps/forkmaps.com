@@ -15,23 +15,21 @@ const getters = {
     coinCount: state => {
         return Object.keys(state.coins).length;
     },
+    coinForks: (state) => (coinKey) => {
+        return Object.values(state.coins).filter((coin) => {
+
+            return coin.forkedFrom && coin.forkedFrom === coinKey;
+        });
+    },
     coinList: state => {
 
         // Filter and map the coins.
-        let coinList = Object.values(state.coins).reduce((filtered, coin) => {
+        let coinList = Object.keys(state.coins).reduce((filtered, key) => {
 
+            let coin = state.coins[key];
+            coin.key = key;
             if (!isSearchMatch(state.coinSearch, coin)) {
                 return filtered;
-            }
-
-            if (coin.links.facebook) {
-                delete coin.links.facebook;
-            }
-            if (coin.links.reddit) {
-                delete coin.links.reddit;
-            }
-            if (coin.links.telegram) {
-                delete coin.links.telegram;
             }
 
             filtered.push(coin);
@@ -124,6 +122,41 @@ const getters = {
         };
 
         return { data: data, options: options };
+    },
+    forkCounts: state => {
+
+        let coinsWithForks = Object.keys(state.coins).reduce((forked, key) => {
+
+            let coin = state.coins[key];
+            if (!coin.forkedFrom) {
+
+                return forked;
+            }
+
+            let forkedFrom = Array.isArray(coin.forkedFrom) ? coin.forkedFrom : [coin.forkedFrom];
+            forkedFrom.forEach(forkedKey => {
+
+                if (forked[forkedKey]) {
+
+                    forked[forkedKey].count++;
+                } else {
+
+                    let forkSource = state.coins[forkedKey];
+                    forked[forkedKey] = {
+                        coin: forkSource.coin,
+                        name: forkSource.name,
+                        count: 1
+                    };
+                }
+            });
+
+            return forked;
+        }, {});
+
+        let result = Object.values(coinsWithForks);
+        result.sort((a, b) => { return b.count - a.count; });
+        console.log(result);
+        return Object.values(result);
     }
 };
 

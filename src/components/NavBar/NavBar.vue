@@ -1,9 +1,11 @@
 <template>
     <div class="nav-bar">
         <div class="nav-content">
-            <img class="site-logo" src="/static/img/forkmaps_w.svg"/>
+            <router-link to="/" exact>
+                <img class="site-logo" src="/static/img/forkmaps_w.svg"/>
+            </router-link>
             <span class="app-title"></span>
-            <router-link to="/" class="navbar-link" exact>
+            <router-link to="/coinList" class="navbar-link" exact>
                 <div class="link-wrapper">
                     <span>Coin List</span>
                 </div>
@@ -52,6 +54,7 @@
         flex-shrink: 0;
         flex-grow: 1;
         flex-direction: row;
+        margin-top: 3px;
     }
     .app-title {
         flex: 1;
