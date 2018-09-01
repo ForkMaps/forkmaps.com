@@ -122,6 +122,41 @@ const getters = {
         };
 
         return { data: data, options: options };
+    },
+    forkCounts: state => {
+
+        let coinsWithForks = Object.keys(state.coins).reduce((forked, key) => {
+
+            let coin = state.coins[key];
+            if (!coin.forkedFrom) {
+
+                return forked;
+            }
+
+            let forkedFrom = Array.isArray(coin.forkedFrom) ? coin.forkedFrom : [coin.forkedFrom];
+            forkedFrom.forEach(forkedKey => {
+
+                if (forked[forkedKey]) {
+
+                    forked[forkedKey].count++;
+                } else {
+
+                    let forkSource = state.coins[forkedKey];
+                    forked[forkedKey] = {
+                        coin: forkSource.coin,
+                        name: forkSource.name,
+                        count: 1
+                    };
+                }
+            });
+
+            return forked;
+        }, {});
+
+        let result = Object.values(coinsWithForks);
+        result.sort((a, b) => { return b.count - a.count; });
+        console.log(result);
+        return Object.values(result);
     }
 };
 

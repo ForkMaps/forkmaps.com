@@ -23,6 +23,7 @@
                         <i v-else-if="key == 'twitter'" class="fab fa-twitter link-icon"></i>
                         <i v-else-if="key == 'website'" class="fas fa-globe link-icon"></i>
                         <i v-else-if="key == 'repo' && link.includes('github')" class="fab fa-github link-icon"></i>
+                        <i v-else-if="key == 'repo' && link.includes('gitlab')" class="fab fa-gitlab link-icon"></i>
                         <i v-else-if="key == 'repo' && link.includes('bitbucket')" class="fab fa-bitbucket link-icon"></i>
                         <i v-else-if="key == 'repo'" class="fas fa-code link-icon"></i>
                     </a>

@@ -1,7 +1,7 @@
 <template>
     <div class="loading-wrapper">
         <div class="loading-content">
-            <i class="fas fa-cog fa-spin loading-icon"></i>
+            <i class="fas fa-life-ring fa-spin loading-icon"></i>
             <!--<div class="la-square-jelly-box la-3x">
                 <div></div>
                 <div></div>
@@ -51,11 +51,9 @@
         font-weight: 700;
         font-size: 18px;
         padding-left: 8px;
-        text-shadow: 0px 0px 3px rgba(255,255,255,0.75);
     }
     .loading-icon {
-        color: #B0ED2B;
-        font-size: 36px;
-        text-shadow: 0px 0px 1px rgba(0,0,0,0.7);
+        color: #545554;
+        font-size: 24px;
     }
 </style>
