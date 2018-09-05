@@ -54,74 +54,78 @@ const getters = {
     },
     coinMap: state => {
 
-        let coinNodes = {};
-        let coinEdges = [];
-
         let coins = state.coins;
 
-        function processCoin (key, coin) {
+        let mapData = Object.keys(coins).reduce((data, coinKey) => {
 
-            function addNode (coinKey, coinVal, parentKey) {
+            let coin = coins[coinKey];
 
-                if (!coinNodes[parentKey]) {
+            // Add map edges.
+            let forkedFrom = coin.forkedFrom ? (Array.isArray(coin.forkedFrom) ? coin.forkedFrom : [coin.forkedFrom]) : [];
+            Array.prototype.push.apply(data.edges, forkedFrom.map((forkParent) => {
 
-                    let parent = coins[parentKey];
-                    coinNodes[parentKey] = new CoinNode(parentKey, parent);
-                }
-                coinNodes[key] = new CoinNode(coinKey, coinVal);
-                coinEdges.push({
-                    from: parentKey,
-                    to: coinKey,
-                    color: {
-                        color: "#BBBBBB"
-                    },
-                    arrows: {
-                        to: {
-                            enabled: true,
-                            scaleFactor: 0.5
-                        },
-                        from: {
-                            enabled: true,
-                            scaleFactor: 0.1,
-                            type: "circle"
-                        }
-                    },
-                    arrowStrikethrough: false
-                });
+                // Increment fork count for parent.
+                data.forkCounts[forkParent] = data.forkCounts[forkParent] ? data.forkCounts[forkParent] + 1 : 1;
+
+                // Return edge relationship.
+                return {
+                    source: forkParent,
+                    target: coinKey
+                };
+            }));
+
+            data.nodes[coinKey] = {
+                id: coinKey,
+                name: coin.name,
+                label: coin.coin,
+                title: coin.name,
+                symbol: coin.icon ? 'image://' + coin.icon : 'circle',
+                symbolSize: 10,
+                value: 0
             };
+            return data;
+        }, { nodes: {}, edges: [], forkCounts: {} });
 
-            if (Array.isArray(coin.forkedFrom)) {
+        // Add fork counts to nodes.
+        Object.keys(mapData.nodes).forEach((nodeKey) => {
 
-                coin.forkedFrom.forEach(parentKey => addNode(key, coin, parentKey));
-            } else {
+            if (mapData.forkCounts[nodeKey]) {
 
-                addNode(key, coin, coin.forkedFrom);
-            }
-        };
+                mapData.nodes[nodeKey].symbolSize = mapData.forkCounts[nodeKey] / 2 + 20;
+                mapData.nodes[nodeKey].value = mapData.forkCounts[nodeKey];
+            } else if (!coins[nodeKey].forkedFrom) {
 
-        Object.entries(coins).forEach(([key, coin]) => {
-
-            if (coin.forkedFrom) {
-
-                processCoin(key, coin);
+                delete mapData.nodes[nodeKey];
             }
         });
+        delete mapData.forkCounts;
 
-        // provide the data in the vis format
-        let data = {
-            nodes: new vis.DataSet(Object.values(coinNodes)),
-            edges: new vis.DataSet(coinEdges)
-        };
-        let options = {
-            interaction: {
-                hideEdgesOnDrag: true
-            },
-            layout: {
-                improvedLayout: false
+        //return { data: data, options: options };
+        return { data: mapData };
+    },
+    algorithmCounts: state => {
+
+        let counts = Object.values(state.coins).reduce((algoCounts, coin) => {
+
+            if (!coin.algorithm) {
+
+                return algoCounts;
             }
-        };
 
-        return { data: data, options: options };
+            if (algoCounts[coin.algorithm]) {
+
+                algoCounts[coin.algorithm].count++;
+            } else {
+
+                algoCounts[coin.algorithm] = {
+                    algorithm: coin.algorithm,
+                    count: 1
+                };
+            }
+            return algoCounts;
+        }, {});
+
+        return Object.values(counts);
     },
     forkCounts: state => {
 
@@ -145,7 +149,8 @@ const getters = {
                     forked[forkedKey] = {
                         coin: forkSource.coin,
                         name: forkSource.name,
-                        count: 1
+                        count: 1,
+                        icon: forkSource.icon
                     };
                 }
             });
@@ -155,7 +160,6 @@ const getters = {
 
         let result = Object.values(coinsWithForks);
         result.sort((a, b) => { return b.count - a.count; });
-        console.log(result);
         return Object.values(result);
     }
 };
@@ -184,35 +188,6 @@ const isSearchMatch = function (searchFor, coin) {
     }
 
     return searchProps.join('').toUpperCase().includes(coinSearch);
-};
-
-const CoinNode = function (key, coin) {
-
-    this.id = key;
-    this.label = coin.coin;
-    this.title = coin.name;
-    this.shadow = {
-        enabled: true,
-        color: 'rgba(0,0,0,0.5)',
-        x: 1,
-        y: 1,
-        size: 10
-    };
-    this.color = {
-        background: "#FFFFFF",
-        border: "#FFFFFF"
-    };
-
-    if (coin.icon) {
-        this.shape = 'image';
-        this.image = coin.icon;
-
-        this.shapeProperties = {
-            useBorderWithImage: false
-        };
-    } else {
-        this.shape = 'circle';
-    }
 };
 
 export default getters;

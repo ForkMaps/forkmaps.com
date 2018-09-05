@@ -2,7 +2,9 @@
     <div class="list-page">
         <loading-view v-if="loading"></loading-view>
         <div class="list-content">
-            <bar-chart class="chart full" v-if="!loading && forkCounts" v-bind:chart-data="forkCounts"></bar-chart>
+            <pictoral-bar class="chart full pictoral" v-if="!loading && forkCounts" v-bind:chart-data="forkCounts"></pictoral-bar>
+            <bar-chart class="chart full bar" v-if="!loading && forkCounts" v-bind:chart-data="forkCounts"></bar-chart>
+            <pie-chart class="chart full pie" v-if="!loading && forkCounts" v-bind:chart-data="algorithmCounts"></pie-chart>
         </div>
     </div>
 </template>
@@ -13,16 +15,21 @@
     import CoinDialog from '@/components/CoinDialog';
     import LoadingView from '@/components/LoadingView';
     import BarChart from './components/BarChart';
+    import PictoralBar from './components/PictoralBar';
+    import PieChart from './components/PieChart';
 
     export default {
         name: 'dashboard',
         components: {
             'bar-chart': BarChart,
+            'pictoral-bar': PictoralBar,
+            'pie-chart': PieChart,
             'loading-view': LoadingView
         },
         computed: {
             ...mapGetters([
                 'algos',
+                'algorithmCounts',
                 'coinCount',
                 'forkCounts'
             ]),
@@ -104,6 +111,7 @@
     padding: 16px;
     border-radius: 8px;
     background-color: #FEFEFE;
+    margin-bottom: 16px;
 }
 .chart.full {
     width: calc(100% - 32px);
@@ -111,12 +119,34 @@
 .chart.half {
     width: calc(50% - 16px);
 }
+.pie {
+    display: none;
+}
 @media all and (max-width: 599px) {
     .list-content {
         padding: 16px 8px;
     }
 }
 @media all and (min-width: 600px) {
+
+}
+@media all and (max-width: 899px) {
+    .pictoral {
+        display: none;
+    }
+    .bar {
+        display: block;
+    }
+}
+@media all and (min-width: 900px) {
+    .pictoral {
+        display: block;
+    }
+    .bar {
+        display: none;
+    }
+}
+@media all and (min-width: 1600px) {
 
 }
 @media all and (min-width: 1600px) {

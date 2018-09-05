@@ -1,11 +1,11 @@
-import axios from 'axios';
+import { CoinService } from '@/services/CoinService';
 
 const actions = {
     loadCoins: (context) => {
         context.commit('LOADING_STATUS', true);
-        axios('https://raw.githubusercontent.com/ForkMaps/cryptonote/master/dist/coins.json')
-        .then((response) => {
-            context.commit('COINS_UPDATED', response.data);
+        CoinService.loadCoins()
+        .then((coins) => {
+            context.commit('COINS_UPDATED', coins);
             context.commit('LOADING_STATUS', false);
         })
         .catch((err) => {

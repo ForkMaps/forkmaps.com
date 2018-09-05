@@ -154,11 +154,20 @@
 .coin-link:hover {
     color: #53C1B3;
 }
+/* Mobile */
 @media all and (max-width: 599px) {
     .dialog-container {
         margin: 0px;
-        width: calc(100vw - 16px);
-        height: 100vh;
+        min-width: 384px;
+        max-width: calc(100vw - 16px);
+        max-height: calc(100vh - 16px);
+    }
+}
+/* Mobile landscape */
+@media all and (max-height: 599px) {
+    .dialog-container {
+        margin: 0px;
+        height: calc(100vh - 16px);
     }
 }
 @media all and (min-width: 600px) {

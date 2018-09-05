@@ -1,5 +1,5 @@
 <template>
-    <div class="bar-chart" id="forkChart">
+    <div class="bar-chart" id="pictoralBar">
 
     </div>
 </template>
@@ -9,7 +9,7 @@
     import { v4 as uuid } from 'uuid';
 
     export default {
-        name: 'barChart',
+        name: 'pictoralBar',
         components: {
 
         },
@@ -23,8 +23,10 @@
         mounted: function () {
 
             this.componentId = uuid();
-            
-            let forkCountChart = echarts.init(document.getElementById('forkChart'));
+            console.log(this.componentId);
+
+            console.log(this.chartData);
+            let forkCountChart = echarts.init(document.getElementById('pictoralBar'));
 
 
             let option = {
@@ -45,16 +47,40 @@
                             value: coin.name
                         };
                     }),
+                    axisTick: {show: false},
+                    axisLine: {show: false},
                     axisLabel: {rotate: 50}
                 },
-                yAxis: {},
+                yAxis: {
+                    splitLine: {show: false},
+                    axisTick: {show: false},
+                    axisLine: {show: false},
+                    axisLabel: {show: false}
+                },
                 series: [{
                     name: 'Forked Coins',
-                    type: 'bar',
+                    type: 'pictorialBar',
+                    barGap: '-100%',
+                    symbolPosition: 'end',
+                    symbolSize: 30,
+                    symbolOffset: [0, '-120%'],
+                    data: this.chartData.map((coin) => {
+                        return {
+                            value: coin.count,
+                            symbol: 'image://' + coin.icon,
+                            symbolSize: [30, 30]
+                        };
+                    })
+                },
+                {
+                    name: 'Forked Coins',
+                    type: 'pictorialBar',
+                    barCategoryGap: '-130%',
+                    symbol: 'path://M0,10 L10,10 C5.5,10 5.5,5 5,0 C4.5,5 4.5,10 0,10 z',
                     data: this.chartData.map(coin => coin.count),
                     itemStyle: {
                         normal: {
-                            barBorderRadius: 2,
+                            opacity: 0.6,
                             color: new echarts.graphic.LinearGradient(
                                 0, 0, 0, 1,
                                 [
@@ -64,16 +90,12 @@
                             )
                         },
                         emphasis: {
-                            color: new echarts.graphic.LinearGradient(
-                                0, 0, 0, 1,
-                                [
-                                    {offset: 0, color: '#22E9FF'},
-                                    {offset: 1, color: '#29FFC6'}
-                                ]
-                            )
+                            opacity: 1
                         }
-                    }
-                }]
+                    },
+                    z: 10
+                }
+            ]
             };
             forkCountChart.setOption(option);
 

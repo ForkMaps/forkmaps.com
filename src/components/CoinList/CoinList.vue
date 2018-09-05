@@ -11,7 +11,9 @@
                             placeholder="search"
                             v-on:keyup.enter="onSearchEnter()"
                             ref="search"/>
-                        <i v-if="searchTerm === ''" class="fas fa-search input-icon"></i>
+                        <i v-if="searchTerm === ''" v-on:click="focusSearch()"
+                            class="fas fa-search input-icon">
+                        </i>
                         <i v-if="searchTerm != ''" v-on:click="clearSearch()"
                             class="fas fa-times-circle input-icon input-button">
                         </i>
@@ -77,6 +79,10 @@
             ]),
             clearSearch () {
                 this.search('');
+            },
+            focusSearch () {
+                // Remove input focus on enter, mainly for mobile.
+                this.$refs.search.focus();
             },
             hideDialog () {
                 this.showDialog = false;
@@ -177,7 +183,7 @@
     flex-wrap: wrap;
     overflow-y: scroll;
     box-sizing: border-box;
-    padding: 0px;
+    padding: 8px;
     -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 0.5s; /* Firefox < 16 */
     -ms-animation: fadein 0.5s; /* Internet Explorer */
@@ -188,10 +194,13 @@
     .input-search {
         width: 150px;
     }
+    .list-content {
+        padding: 0px;
+    }
 }
 @media all and (min-width: 600px) {
     .list-content {
-        padding: 8px 8px 16px 8px;
+
     }
 }
 @media all and (min-width: 1600px) {

@@ -79,12 +79,12 @@
         text-align: center;
     }
     .navbar-link:hover {
-        border-bottom: 3px solid #33A193;
+        border-bottom: 3px solid #DA4A48;
     }
     .navbar-link.router-link-active,
     .navbar-link.router-link-exact-active {
         cursor: pointer;
-        border-bottom: 3px solid #53C1B3;
+        border-bottom: 3px solid #F45351;
     }
     .nav-social:hover {
         color: #FFFFFF;
