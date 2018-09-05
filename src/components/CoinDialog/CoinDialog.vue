@@ -5,14 +5,14 @@
                 <div class="close-wrapper">
                     <i class="fas fa-fw fa-times close-button" @click="$emit('closeDialog')"></i>
                 </div>
-                <div class="coin-image" v-bind:style="{'background': 'url(' + coin.icon + ')  no-repeat center center', 'background-size': 'contain'}">
+                <div class="top-section">
+                    <div class="coin-image" v-if="coin.icon" v-bind:style="{'background': 'url(' + coin.icon + ')  no-repeat center center', 'background-size': 'contain'}">
+                    </div>
+                    <div class="main-info">
+                        <span class="name">{{coin.name}}</span>
+                        <span class="ticker">{{coin.coin}}</span>
+                    </div>
                 </div>
-                <span class="info name">{{coin.name}}</span>
-                <span class="info ticker">{{coin.coin}}</span>
-                <span class="info algo">{{coin.algorithm}}</span>
-                <span class="info label">Algorithm</span>
-                <span class="info algo" v-if="forks.length > 0">{{forks.length}}</span>
-                <span class="info label" v-if="forks.length > 0">fork{{forks.length == 1 ? '' : 's'}}</span>
                 <div class="link-wrapper">
                     <a v-for="(link, key, index) in  coin.links" v-bind:href="link" v-bind:title="key.charAt(0).toUpperCase() + key.substr(1)" rel="nofollow" target="_blank" class="coin-link">
                         <i v-if="key == 'bitcointalkAnn'" class="fab fa-bitcoin link-icon"></i>
@@ -28,6 +28,11 @@
                         <i v-else-if="key == 'repo'" class="fas fa-code link-icon"></i>
                     </a>
                 </div>
+                <span class="info algo">{{coin.algorithm}}</span>
+                <span class="info label">Algorithm</span>
+                <span class="info algo" v-if="forks.length > 0">{{forks.length}}</span>
+                <span class="info label" v-if="forks.length > 0">fork{{forks.length == 1 ? '' : 's'}}</span>
+
             </div>
         </div>
     </transition>
@@ -73,12 +78,14 @@
 .dialog-container {
     flex-grow: 0;
     flex-shrink: 0;
-    background-color: #FCFCFE;
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     transition: all .3s ease;
+    box-sizing: border-box;
     max-width: 100%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    padding-bottom: 8px;
 }
 .dialog-enter {
     opacity: 0;
@@ -95,6 +102,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    background-color: #FEFEFE;
 }
 .close-button {
     text-align: right;
@@ -103,28 +111,42 @@
     padding: 8px;
 }
 .close-button:hover {
-    color: rgba(0,0,0,0.2);
+    color: #53C1B3;
+    cursor: pointer;
+}
+.top-section {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 32px 24px 32px;
+    background-color: #FEFEFE;
 }
 .coin-image {
-    width: 100%;
-    height: 128px;
-    margin-bottom: 8px;
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+}
+.main-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    padding-left: 16px;
 }
 .info {
     text-align: center;
     padding: 0px 16px;
 }
 .name {
-    font-size: 28px;
-    padding-bottom: 8px;
+    font-size: 24px;
+    color: #2A2B30;
+    word-wrap:break-word;
 }
 .ticker {
-    font-size: 20px;
-    color: #FEFEFE;
-    background-color: #758290;
-    padding: 6px;
-    margin: 8px 0px 16px 0px;;
-    font-weight: 600;
+    font-size: 18px;
+    color: #4C555B;
 }
 .algo {
     font-size: 22px;
@@ -144,12 +166,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    background-color: #FFFFFF;
 }
 .coin-link {
-    color: #9B9B9B;
+    color: #758290;
     font-size: 24px;
-    padding: 8px 4px;
+    padding: 8px 6px;
 }
 .coin-link:hover {
     color: #53C1B3;
@@ -167,12 +192,13 @@
 @media all and (max-height: 599px) {
     .dialog-container {
         margin: 0px;
-        height: calc(100vh - 16px);
+        max-height: calc(100vh - 16px);
     }
 }
 @media all and (min-width: 600px) {
     .dialog-container {
         min-width: 400px;
+        max-width: 500px;
     }
 }
 </style>
