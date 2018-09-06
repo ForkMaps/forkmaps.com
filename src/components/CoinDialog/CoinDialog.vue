@@ -86,6 +86,7 @@
     max-width: 100%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
     padding-bottom: 8px;
+    max-height: calc(100vh - 16px);
 }
 .dialog-enter {
     opacity: 0;
@@ -103,6 +104,7 @@
     flex-direction: row;
     justify-content: flex-end;
     background-color: #FEFEFE;
+    flex-shrink: 0;
 }
 .close-button {
     text-align: right;
@@ -183,22 +185,29 @@
 @media all and (max-width: 599px) {
     .dialog-container {
         margin: 0px;
-        min-width: 384px;
-        max-width: calc(100vw - 16px);
-        max-height: calc(100vh - 16px);
+        width: calc(100vw - 16px);
+        max-height: calc(100vh - 8px);
     }
 }
 /* Mobile landscape */
-@media all and (max-height: 599px) {
+@media all and (max-height: 599px) and (orientation:landscape) {
     .dialog-container {
         margin: 0px;
-        max-height: calc(100vh - 16px);
+        max-width: calc(100vw - 16px);
+        max-height: calc(100vh - 8px);
+        overflow-y: scroll;
     }
 }
 @media all and (min-width: 600px) {
     .dialog-container {
         min-width: 400px;
-        max-width: 500px;
+        max-width: calc(100vw - 16px);
+    }
+}
+@media all and (min-width: 900px) {
+    .dialog-container {
+
+
     }
 }
 </style>

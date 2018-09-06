@@ -100,7 +100,7 @@
         background-color: #B7B3C0;
         margin: 12px 0px;
     }
-    @media screen and (orientation:portrait) {
+    @media all and (orientation:portrait) {
         .navbar-link {
             padding: 4px 12px;
         }
@@ -109,6 +109,14 @@
         }
         .nav-social {
             display: none;
+        }
+    }
+    @media all and (max-width: 600px) {
+        .site-logo {
+            height: 24px;
+        }
+        .navbar-link {
+            padding: 4px 6px;
         }
     }
     @media all and (min-width: 1600px) {
