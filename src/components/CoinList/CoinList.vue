@@ -181,9 +181,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow-y: scroll;
     box-sizing: border-box;
     padding: 8px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 0.5s; /* Firefox < 16 */
     -ms-animation: fadein 0.5s; /* Internet Explorer */
