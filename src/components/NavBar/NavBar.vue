@@ -7,12 +7,14 @@
             <span class="app-title"></span>
             <router-link to="/coinList" class="navbar-link" exact>
                 <div class="link-wrapper">
-                    <span>Coin List</span>
+                    <i class="fas fa-fw fa-list-ul nav-icon"></i>
+                    <span class="nav-text">Coin List</span>
                 </div>
             </router-link>
             <router-link to="/forkMap" class="navbar-link" exact>
                 <div class="link-wrapper">
-                    <span>Fork Map</span>
+                    <i class="fas fa-fw fa-code-branch nav-icon"></i>
+                    <span class="nav-text">Fork Map</span>
                 </div>
             </router-link>
             <div class="nav-divider"></div>
@@ -111,12 +113,17 @@
             display: none;
         }
     }
-    @media all and (max-width: 600px) {
+    @media all and (max-width: 599px) {
         .site-logo {
-            height: 24px;
+            height: 28px;
         }
-        .navbar-link {
-            padding: 4px 6px;
+        .nav-text {
+            display: none;
+        }
+    }
+    @media all and (min-width: 600px) {
+        .nav-icon {
+            display: none;
         }
     }
     @media all and (min-width: 1600px) {
