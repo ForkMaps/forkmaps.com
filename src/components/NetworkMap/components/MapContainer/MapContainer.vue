@@ -73,21 +73,7 @@
                 };
 
                 networkMap.setOption(option);
-
                 this.mapLoading = false;
-/*
-                // Get the network container.
-                this.container = document.getElementById('networkMapContainer');
-
-                // Initialize the network.
-                this.network = new vis.Network(this.container, this.coinMap.data, this.coinMap.options);
-
-                this.network.on('stabilized', (result) => {
-
-                    console.log('iterations to stabilize', result.iterations);
-                    this.mapLoaded();
-                });
-*/
             },
             mapLoaded: function () {
 

@@ -23,9 +23,8 @@
         mounted: function () {
 
             this.componentId = uuid();
-            
-            let forkCountChart = echarts.init(document.getElementById('forkChart'));
 
+            let forkCountChart = echarts.init(document.getElementById('forkChart'));
 
             let option = {
                 title: {
@@ -76,7 +75,6 @@
                 }]
             };
             forkCountChart.setOption(option);
-
         }
     };
 </script>

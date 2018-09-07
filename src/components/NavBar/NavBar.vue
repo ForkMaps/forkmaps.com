@@ -30,10 +30,7 @@
 
 <script>
     export default {
-        name: 'nav-bar',
-        data () {
-            return {}
-        }
+        name: 'nav-bar'
     };
 </script>
 
