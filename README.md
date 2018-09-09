@@ -1,4 +1,4 @@
-![forkmaps logo](static/img/forkmaps_b_retina.png)
+![forkmaps logo](static/img/forkmaps_b.svg)
 
 ## Roadmap
 
