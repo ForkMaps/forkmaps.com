@@ -24,7 +24,9 @@
 <script>
     export default {
         name: 'coinCard',
-        props: ['coin']
+        props: {
+            coin: Object
+        }
     };
 </script>
 

@@ -14,25 +14,18 @@
                     </div>
                 </div>
                 <div class="link-wrapper">
-                    <a v-for="(link, key, index) in  coin.links" v-bind:href="link" v-bind:title="key.charAt(0).toUpperCase() + key.substr(1)" rel="nofollow" target="_blank" class="coin-link">
-                        <i v-if="key == 'bitcointalkAnn'" class="fab fa-bitcoin link-icon"></i>
-                        <i v-else-if="key == 'discord'" class="fab fa-discord link-icon"></i>
-                        <i v-else-if="key == 'facebook'" class="fab fa-facebook link-icon"></i>
-                        <i v-else-if="key == 'reddit'" class="fab fa-reddit link-icon"></i>
-                        <i v-else-if="key == 'telegram'" class="fab fa-telegram link-icon"></i>
-                        <i v-else-if="key == 'twitter'" class="fab fa-twitter link-icon"></i>
-                        <i v-else-if="key == 'website'" class="fas fa-globe link-icon"></i>
-                        <i v-else-if="key == 'repo' && link.includes('github')" class="fab fa-github link-icon"></i>
-                        <i v-else-if="key == 'repo' && link.includes('gitlab')" class="fab fa-gitlab link-icon"></i>
-                        <i v-else-if="key == 'repo' && link.includes('bitbucket')" class="fab fa-bitbucket link-icon"></i>
-                        <i v-else-if="key == 'repo'" class="fas fa-code link-icon"></i>
+                    <a v-for="(link, key, index) in coin.links"
+                        v-bind:href="link"
+                        v-bind:title="key.charAt(0).toUpperCase() + key.substr(1)"
+                        rel="nofollow" target="_blank"
+                        class="coin-link">
+                        <link-icon v-bind:link-type="key" v-bind:link="link"></link-icon>
                     </a>
                 </div>
                 <span class="info algo">{{coin.algorithm}}</span>
                 <span class="info label">Algorithm</span>
                 <span class="info algo" v-if="forks.length > 0">{{forks.length}}</span>
                 <span class="info label" v-if="forks.length > 0">fork{{forks.length == 1 ? '' : 's'}}</span>
-
             </div>
         </div>
     </transition>
@@ -41,10 +34,16 @@
 <script>
     import { mapActions, mapGetters, mapState } from 'vuex';
     import store from '@/store';
+    import LinkIcon from './components/LinkIcon';
 
     export default {
         name: 'coinDialog',
-        props: ['coin'],
+        props: {
+            coin: Object
+        },
+        components: {
+            'link-icon': LinkIcon
+        },
         computed: {
             ...mapGetters([
                 'coinForks'
@@ -54,7 +53,7 @@
                     return this.coinForks(this.coin.key);
                 }
             }
-        },
+        }
     };
 </script>
 

@@ -18,7 +18,9 @@
                 componentId: 'barChart'
             }
         },
-        props: ['chartData'],
+        props: {
+            chartData: Array
+        },
         methods: {},
         mounted: function () {
 

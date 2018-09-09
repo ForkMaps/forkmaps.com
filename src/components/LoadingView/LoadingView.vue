@@ -2,10 +2,6 @@
     <div class="loading-wrapper">
         <div class="loading-content">
             <i class="fas fa-life-ring fa-spin loading-icon"></i>
-            <!--<div class="la-square-jelly-box la-3x">
-                <div></div>
-                <div></div>
-            </div>-->
             <span class="loading-text">{{loadingMessage}}</span>
         </div>
     </div>
@@ -23,7 +19,9 @@
                 return message.join(' ');
             }
         },
-        props: ['detail']
+        props: {
+            detail: String
+        }
     };
 </script>
 

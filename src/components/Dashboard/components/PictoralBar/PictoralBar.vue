@@ -18,16 +18,14 @@
                 componentId: 'barChart'
             }
         },
-        props: ['chartData'],
+        props: {
+            chartData: Array
+        },
         methods: {},
         mounted: function () {
 
             this.componentId = uuid();
-            console.log(this.componentId);
-
-            console.log(this.chartData);
             let forkCountChart = echarts.init(document.getElementById('pictoralBar'));
-
 
             let option = {
                 title: {

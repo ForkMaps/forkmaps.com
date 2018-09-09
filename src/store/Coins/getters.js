@@ -3,7 +3,9 @@ const getters = {
 
         // Reduce to unique array of algorithms.
         let algorithms = Object.values(state.coins).reduce((algos, coin) => {
+
             if (coin.algorithm && algos.indexOf(coin.algorithm) < 0) {
+
                 algos.push(coin.algorithm);
             }
             return algos;
@@ -13,9 +15,11 @@ const getters = {
     },
     coins: state => state.coins,
     coinCount: state => {
+
         return Object.keys(state.coins).length;
     },
     coinForks: (state) => (coinKey) => {
+
         return Object.values(state.coins).filter((coin) => {
 
             return coin.forkedFrom && coin.forkedFrom === coinKey;
@@ -29,6 +33,7 @@ const getters = {
             let coin = state.coins[key];
             coin.key = key;
             if (!isSearchMatch(state.coinSearch, coin)) {
+                
                 return filtered;
             }
 
