@@ -5,6 +5,7 @@
 * Sort, ~~search~~
 * ~~Display coin algorithms~~
 * ~~Addional links for coins (social media, wallet generators, etc.)~~
+* Merit-based coin ranking (dev score, forks/time, community, etc.)
 * Fork timeline
 * Additional graph types
 * Add other coin families
