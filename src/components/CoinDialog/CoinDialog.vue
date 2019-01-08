@@ -1,7 +1,7 @@
 <template>
     <transition name="dialog">
-        <div class="dialog-wrapper">
-            <div class="dialog-container">
+        <div class="dialog-wrapper" @click="$emit('closeDialog')">
+            <div class="dialog-container" @click.stop>
                 <div class="close-wrapper">
                     <i class="fas fa-fw fa-times close-button" @click="$emit('closeDialog')"></i>
                 </div>

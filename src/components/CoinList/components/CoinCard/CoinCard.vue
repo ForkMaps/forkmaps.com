@@ -93,6 +93,16 @@
         margin-right: 6px;
         box-shadow: 1px 0px 0px rgba(0,0,0,0.30);
     }
+    .inactive-card {
+        background-color: #EFEFEF;
+    }
+    .inactive-icon {
+        opacity: 0.5;
+    }
+    .inactive-text {
+        color: #888;
+        text-shadow: 1px 1px #FFF;
+    }
     @media all and (max-width: 599px) {
         .coin-card {
             padding: 0;

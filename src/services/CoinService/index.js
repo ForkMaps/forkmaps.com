@@ -1,1 +1,1 @@
-export { default as CoinService } from './CoinService.js';
+export { default as CoinService } from './coins.service';

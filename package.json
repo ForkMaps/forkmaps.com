@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jerme404/ForkMaps/forkmaps.com.git"
+    "url": "git+https://gitlab.com/galaxia-project/services/block-explorer.git"
   },
   "bugs": {
     "url": "https://github.com/ForkMaps/forkmaps.com/issues"
   },
-  "homepage": "http://forkmaps.com",
+  "homepage": "https://gitlab.com/galaxia-project/services/block-explorer",
   "dependencies": {
     "axios": "^0.18.0",
     "echarts": "^4.1.0",

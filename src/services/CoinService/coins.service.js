@@ -1,8 +1,9 @@
 import axios from 'axios';
+import { apiConfig } from '@/config/api.config';
 
 export default {
     loadCoins: function () {
-        return axios('https://raw.githubusercontent.com/ForkMaps/cryptonote/master/dist/coins.json')
+        return axios(apiConfig.coins.cryptonote)
         .then((response) => {
             return Promise.resolve(response.data);
         })
